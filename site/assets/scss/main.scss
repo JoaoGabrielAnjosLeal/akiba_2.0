@@ -1,0 +1,2301 @@
+@import "_color.scss", "_breakpoint.scss";
+
+//********** FONTES **********
+@font-face {
+    font-family: Averta-ExtraBold;
+    font-display: swap;
+    src: url(../font/Averta-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: Averta-Regular;
+    font-display: swap;
+    src: url(../font/Averta-Regular.otf);
+}
+
+//********** BODY **********
+*{
+    font-family: Averta-Regular;
+}
+
+.body{
+    background: linear-gradient(180deg, $azul-escuro-03 41rem, $azul-medio-02 0%);
+    @include lg{
+        background: $azul-escuro-03;
+    }
+    
+}
+
+//********** ANUNCIOS **********
+.announcement-vertical{
+    width: 99.9%;
+    height: 7rem;
+}
+
+.announcement-horizontal{
+    width: 99.9%;
+    height: 100%;
+}
+
+//********** TOAST **********
+.toast{
+    top: 1rem;
+    right: 1rem;
+    border-radius: 0.5rem;
+    z-index: 20;
+    @include xs{
+        width: 100%;
+        top: 0;
+        right: 0;
+        border-radius: 0 !important;
+    }
+}
+
+//********** ALERTA DE COOKIE **********
+.cookie-alert{
+    width: 27rem;
+    height: 8rem;
+    bottom: 1rem;
+    left: 1rem;
+    padding: 0.5rem 1rem 0.3rem 0rem;
+    border-radius: 0.5rem;
+    background-color: $aurora;
+    background-image: url(../img/img/bg_cookie-alert.webp);
+    background-repeat: no-repeat;
+    z-index: 10;
+    .cookie-alertText{
+        width: 15rem;
+        margin: 0rem 0rem 0.4rem 0rem;
+        float: right;
+        font-size: 0.9rem;
+        @include sm{
+            width: 100%;
+            font-size: 1rem;
+        }
+    }
+    .cookie-alertBtn{
+        width: 15rem;
+        height: 2.3rem;
+        background-color: $azul-claro-01;
+        border-radius: 0.5rem;
+        font-family: Averta-ExtraBold;
+        color: $aurora;
+        @include sm{
+            width: 100%;
+        }
+    }
+    @include sm{
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+        top: initial;
+        bottom: 0;
+        left: 0;
+        border-radius: 0;
+        background-image: none;
+    }
+}
+
+//********** PAGE INTERNAL START **********
+.block-start{
+    .block-container{
+        margin: 0rem 0rem 0.4rem 0rem;
+        border: 0.2rem solid $azul-claro-01;
+        border-radius: 0.8rem;
+        .block-title{
+            margin: 0.5rem 0rem 0.6rem 0rem;
+            font-family: Averta-ExtraBold;
+            color: $laranja;
+            font-size: 2rem;
+        }
+    }
+    .block-description{
+        font-family: Averta-ExtraBold;
+        color: $cinza-claro-01;
+    }
+}
+
+//********** ERRO 404 **********
+.erro404{
+    margin: 5% 0;
+    p{
+        color: $aurora;
+    }
+    div{
+        button{
+            padding: 0.3rem 0.5rem 0.35rem 0.5rem;
+            border-radius: 0.5rem;
+            background-color: $laranja;
+            color: $aurora;
+            font-family: Averta-ExtraBold;
+        }
+    }
+}
+
+//********** NAVBAR **********
+.header{
+    .nav{
+        width: auto;
+        height: 2.7rem;
+        background-color: $aurora;
+        margin: 1.5rem 0rem 0rem 8rem;
+        @include lg{
+            height: 4rem;
+            background: none;
+            margin: 1.5rem 7rem 0rem 7rem;
+        }
+        @include sm{
+            margin: 1.5rem 0.5rem 0rem 0.5rem;
+        }
+        .nav-brand{
+            width: 100%;
+            .nav-logo{
+                width: 10rem;
+                height: auto;
+                margin: -0.65rem 0rem 0rem -5rem;
+                cursor: pointer;
+                @include lg{
+                    width: 8rem;
+                    margin: 0.4rem;
+                    cursor: initial;
+                }
+            }
+            .nav-toggle{
+                width: 4rem;
+                height: 4rem;
+                background-color: $cinza-claro-01;
+                font-size: 1.8rem;
+                &:hover{
+                    background-color: $cinza-claro-01;
+                }
+            }
+            .nav-theme{
+                width: 2rem;
+                height: 2rem;
+                margin: 0.4rem 1rem 0rem 0rem;
+                background-color: $azul-escuro-02;
+                .nav-themeIcon{
+                    width: 100%;
+                    height: 100%;
+                    filter: invert(75%) sepia(27%) saturate(3640%) hue-rotate(345deg) brightness(103%) contrast(101%);
+                }
+                &:hover{
+                    background-color: $azul-escuro-02;
+                }
+                @include lg{
+                    margin: 1rem 1rem 0rem 0rem;
+                    border: 0.15rem solid $cinza-claro-01;
+                    &:hover{
+                        border: 0.15rem solid $cinza-claro-01;
+                    }
+                }
+            }
+        }
+        .nav-list{
+            margin: -2.75rem 0rem 0rem 6rem;
+            z-index: 20;
+            @include lg{
+                width: 30%;
+                height: 100%;
+                margin: 0;
+                position: fixed;
+                top: 0;
+                right: 0;
+                background-color: $aurora;
+                display: none;
+            }
+            @include md{
+                width: 40%;
+            }
+            @include sm{
+                width: 50%;
+            }
+            @include xs{
+                width: 80%;
+            }
+            .nav-listClose{
+                margin: 0.5rem 0rem 0.5rem 0.3rem;
+                background-color: $azul-claro-01;
+                color: $aurora;
+                font-family: Averta-ExtraBold;
+                &:hover{
+                    background-color: $azul-claro-01;
+                    color: $aurora;
+                }
+            }
+            .nav-item{
+                cursor: pointer;
+                display: inline;
+                border-right: 0.1rem solid $cinza-claro-01;
+                padding: 0rem 0.5rem 0rem 0.3rem;
+                font-family: Averta-ExtraBold;
+                color: $preto;
+                .nav-itemIcon{
+                    width: 1rem;
+                    height: auto;
+                    margin: -0.5rem 0rem 0rem 0rem;
+                }
+                &:last-child{
+                    border: 0;
+                    padding: 0rem 0rem 0rem 0.3rem;
+                }
+                &:hover{
+                    color: $azul-claro-01;
+                    .nav-itemIcon{
+                        filter: invert(30%) sepia(74%) saturate(4154%) hue-rotate(204deg) brightness(105%) contrast(103%);
+                    }
+                }
+                @include lg{
+                    cursor: initial;
+                    display: list-item;
+                    list-style: none;
+                    border-right: 0;
+                    border-bottom: 0.1rem solid $cinza-claro-01;
+                    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+                    font-size: 1.1rem;
+                    &:last-child{
+                        padding: 0.3rem 0.5rem 0rem 0.5rem;
+                    }
+                }
+            }
+        }
+        .nav-themeSelector{
+            top: 12%;
+            right: 0;
+            background-color: $azul-claro-01;
+            border-radius: 0.8rem 0rem 0rem 0.8rem;
+            display: none;
+            z-index: 10;
+            .nav-themeItem{
+                width: 2rem;
+                height: 2rem;
+                cursor: pointer;
+                list-style: none;
+                padding: 0.05rem 0rem 0rem 0rem;
+                margin: 0.5rem 0.5rem 0rem 0.5rem;
+                background-color: $aurora;
+                font-size: 1.3rem;
+                text-align: center;
+                color: $cinza-escuro-01;
+                &:last-child{
+                    margin: 0.5rem 0.5rem 0.45rem 0.5rem;
+                }
+            }
+            .nav-themeLight{
+                background-color: $laranja;
+            }
+            .nav-themeDark{
+                background-color: $cinza-escuro-02;
+            }
+            @include md{
+                cursor:initial;
+                top: 20%;
+            }
+        }
+    }
+}
+
+//********** RODAPÉ **********
+.footer{
+    background-color: $azul-medio-01;
+    background-size: cover;
+    .footer-container{
+        .footer-logo{
+            width: 8rem;
+            height: auto;
+        }
+        .footer-credits{
+            font-size: 0.9rem;
+            color: $aurora;
+            span{
+                color: $laranja;
+            }
+        }
+    }
+}
+
+//********** CAIXA DE PEDIDOS **********
+.requestMusic-modal{
+    background-color: rgba(0, 0, 0, 0.504);
+    z-index: 9999;
+    display: none;
+    .requestMusic-body{
+        width: 25rem;
+        height: auto;
+        margin: 2rem auto;
+        border-radius: 0.8rem;
+        background-color: $aurora;
+        background-image: url(../img/img/bg_caixa-pedido.webp);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        .requestMusic-head{
+            height: 4.5rem;
+            button{
+                color: $aurora;
+                font-size: 1.3rem;
+            }
+        }
+        .requestMusic-content{
+            .requestMusic-form{
+                div{
+                    label{
+                        font-family: Averta-ExtraBold;
+                        font-size: 1rem;
+                    }
+                    input{
+                        height: 2.5rem;
+                        margin: -0.35rem 0rem 0rem 0rem;
+                        border: 0.1rem solid $azul-escuro-03;
+                        border-radius: 0.5rem;
+                        font-size: 0.9rem;
+                    }
+                    textarea{
+                        margin: -0.35rem 0rem 0rem 0rem;
+                        border: 0.1rem solid $azul-escuro-03;
+                        border-radius: 0.5rem;
+                        resize: none;
+                        font-size: 0.9rem;
+                    }
+                    div{
+                        font-size: 0.7rem;
+                        color: $azul-escuro-03;
+                    }
+                }
+                button{
+                    border-radius: 0.5rem;
+                    background-color: $azul-escuro-03;
+                    font-family: Averta-ExtraBold;
+                    color: $aurora;
+                }
+            }
+        }
+        @include xs{
+            width: 95%;
+        }
+    }
+}
+
+//********** PLAYERS **********
+
+//player top
+.player-top{
+    .social{
+        .social-link{
+            margin: 0rem 0.5rem 0.2rem 0.5rem;
+            font-size: 1.1rem;
+            color: $azul-claro-01;
+            &:hover{
+                color: $azul-claro-01;
+            }
+        }
+    }
+    .streamer-message{
+        width: 100%;
+        height: 3.5rem;
+        border: 0.2rem solid $azul-claro-01;
+        border-radius: 0.8rem;
+        .streamer-messageContainer{
+            width: 90%;
+            height: auto;
+            margin: 0.73rem 0rem 0rem 0rem;
+            overflow: hidden;
+            .streamer-messageText{
+                white-space: nowrap;
+                font-family: Averta-ExtraBold;
+                color: $aurora;
+                font-size: 1.5rem;
+                animation: marquee 20s linear infinite;
+            }
+            @include md{
+                width: 100%;
+                margin: 0.75rem 0rem 0rem 0rem;
+            }
+        }
+        .streamer-messageAvatar{
+            width: 6rem;
+            height: auto;
+            margin: -6.9rem 1rem 0rem 0rem;
+            @include md{
+                display: none;
+            }
+        }
+    }
+    .streamer-program{
+        .streamer-programLogo{
+            width: 14rem;
+            height: auto;
+        }
+        .streamer-programChevron{
+            margin: 1.65rem 0rem 0rem 0rem;
+            font-size: 1.8rem;
+            color: $cinza-claro-01;
+        }
+    }
+    .streamer{
+        margin: -5.8rem 0rem 0rem 17.5rem;
+        .streamer-genre{
+            color: $laranja;
+        }
+        .streamer-name{
+            width: 14rem;
+            height: auto;
+            margin: -0.1rem 0rem 0rem 0rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-family: Averta-ExtraBold;
+            color: $aurora;
+            font-size: 1.5rem;
+        }
+        .streamer-status{
+            padding: 0rem 0.5rem 0rem 0.5rem;
+            background-color: $vermelho-claro-01;
+            border-radius: 0.5rem;
+            font-family: Averta-ExtraBold;
+            color: $aurora;
+            font-size: 0.9rem;
+        }
+        @include sm{
+            margin: 0;
+        }
+    }
+    .playing{
+        margin: 5rem 0rem 0rem 0rem;
+        .playing-title{
+            color: $laranja;
+        }
+        .playing-container{
+            width: 25rem;
+            height: auto;
+            overflow: hidden;
+            .playing-text{
+                font-family: Averta-ExtraBold;
+                color: $aurora;
+                font-size: 1.5rem;
+                animation: marquee 20s linear infinite;
+            }
+            @include sm{
+                width: 80%;
+            }
+        }
+        @include lg{
+            margin: 5rem 0rem 2rem 0rem;
+        }
+        @include sm{
+            margin: 1rem 0rem 0.5rem 0rem;
+        }
+    }
+    .streamer-avatar{
+        width: 16rem;
+        margin: -16rem 0rem 0rem 29rem;
+        @include lg{
+            display: none;
+        }
+        @include xll{
+            margin: -16rem 0rem 0rem 36rem;
+        }
+    }
+    .request-music{
+        margin: -4rem 0rem 0rem 0rem;
+        .requestMusic-btn{
+            padding: 0rem 0.6rem 0.1rem 0.6rem !important;
+            border: 0.2rem solid $laranja;
+            border-radius: 0.5rem;
+            color: $azul-claro-01;
+            font-family: Averta-ExtraBold;
+            font-size: 1.3rem;
+            .requestMusic-btnSpan{
+                font-family: Averta-ExtraBold;
+                color: $laranja;
+            }
+            &:hover{
+                border: 0.2rem solid $laranja;
+                color: $azul-claro-01;
+            }
+        }
+        @include xl{
+            display: none;
+        }
+    }
+    .control{
+        margin: -8rem 6.5rem 0rem 0rem;
+        .control-btn{
+            color: $laranja;
+            font-size: 2.5rem;
+            &:hover{
+                color: $laranja;
+            }
+        }
+        .pause{
+            display: none;
+        }
+        .volume-box{
+            width: 5rem;
+            height: auto;
+            padding: 0.35rem 0.5rem 0rem 0.5rem;
+            left: 1.3rem;
+            bottom: 5rem;
+            border-radius: 0.5rem;
+            background-color: $laranja;
+            transform: rotate(-90deg);
+            display: none;
+            .volume-range{
+                &::-webkit-slider-thumb{
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 1.1rem;
+                    height: 1.1rem;
+                    border-radius: 22.5rem; 
+                    background: $cinza-escuro-01;
+                    cursor: pointer;
+                }
+            }
+        }
+        @include xl{
+            display: none;
+        }
+    }
+    .streamer-alert{
+        width: 11.9rem;
+        height: auto;
+        padding: 0rem 0.7rem 0.14rem 0.7rem;
+        margin: -15.6rem 0rem 0rem 0rem;
+        background-color: $cinza-escuro-01;
+        border-radius: 0.5rem;
+        .streamer-alertIcon{
+            font-size: 2rem;
+            color: $aurora;
+        }
+        .streamer-alertText{
+            color: $aurora;
+        }
+        @include xl{
+            display: none !important;
+        }
+    }
+}
+
+//player footer
+.player-footer{
+    height: 4rem;
+    bottom: 0;
+    background-color: $aurora;
+    border-top: 0.2rem solid $azul-claro-01;
+    section{
+        .control{
+            width: 10rem;
+            .control-btn{
+                font-size: 2.5rem;
+                color: $azul-claro-01;
+            }
+            .pause{
+                display: none;
+            }
+            .volume{
+                font-size: 1.8rem;
+                cursor: initial;
+                @include sm{
+                    display: none;
+                }
+            }
+            .volume-range{
+                width: 3rem;
+                top: 1.2rem;
+                left: 5rem;
+                &::-webkit-slider-thumb{
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 1rem;
+                    height: 1rem;
+                    border-radius: 22.5rem; 
+                    background: $cinza-escuro-01;
+                    cursor: pointer;
+                }
+                @include sm{
+                    display: none;
+                }
+            }
+        }
+        .playing{
+            .playing-cover{
+                width: 3rem;
+                height: auto;
+                margin: -5.3rem 0rem 0rem 9rem;
+                border-radius: 0.5rem;
+            }
+            .playing-title{
+                margin: -4.7rem 0rem 0rem 12.5rem;
+                font-size: 0.9rem;
+                color: $azul-claro-01;
+            }
+            .playing-container{
+                width: 20rem;
+                height: auto;
+                margin: -0.1rem 0rem 0rem 12.5rem;
+                overflow: hidden;
+                .playing-text{
+                    font-family: Averta-ExtraBold;
+                    color: $azul-claro-01;
+                    font-size: 1.5rem;
+                    animation: marquee 20s linear infinite;
+                }
+                @include md{
+                    width: 30%;
+                }
+            }
+            @include sm{
+                margin: 0rem 0rem 0rem -5.5rem;
+            }
+        }
+        .request-music{
+            margin: -3.1rem 0rem 0rem 0rem;
+            .requestMusic-btn{
+                background-color: $azul-claro-01;
+                font-family: Averta-ExtraBold;
+                color: $aurora;
+            }
+        }
+    } 
+}
+
+@keyframes marquee {
+    from{
+        transform: translate(100%);
+    }
+    to{
+        transform: translate(-85rem);
+    }
+}
+
+//********** DESTAQUES **********
+.highLight{
+    .highLight-title{
+        @include xl{
+            display: flex;
+            justify-content: center;
+        }
+        h6{
+            color: $laranja;
+            font-family: Averta-ExtraBold;
+            font-size: 1.3rem;
+            &::after{
+                width: 56.6rem;
+                content: '';
+                position: absolute;
+                border-bottom: 0.1rem solid $laranja;
+                margin: 0.67rem 0rem 0rem 0.5rem;
+                @include lg{
+                    display: none !important;
+                }
+                @include xll{
+                    width: 67.5rem;
+                }
+            }
+        }
+    }
+    .highLight-container{
+        .highLight-article{
+            width: 22.9rem;
+            height: 9rem;
+            background-color: $azul-claro-01;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            @include lg{
+                cursor: initial;
+            }
+            @include sm{
+                width: 100%;
+            }
+            @include xll{
+                width: 26.5rem;
+            }
+            .highLight-avatar{
+                width: 8.5rem;
+                height: auto;
+                margin: -0.95rem 0.5rem 0rem 0rem;
+            }
+            .highLight-title{
+                width: 13rem;
+                height: 5.5rem;
+                margin: 0.5rem 0rem 0rem 0.5rem;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 4;
+                overflow: hidden;
+                color: $aurora;
+                font-family: Averta-ExtraBold;
+                font-size: 1.2rem;
+                @include sm{
+                    width: 50%;
+                }
+                @include xll{
+                    width: 15rem;
+                }
+            }
+            .highLight-tag{
+                margin: 0.7rem 0rem 0rem 0.5rem;
+                .highLight-tagIcon{
+                    width: 1.1rem;
+                    height: auto;
+                    filter: invert(82%) sepia(35%) saturate(260%) hue-rotate(323deg) brightness(114%) contrast(104%);
+                }
+            }
+            .highLight-count{
+                bottom: 0.5rem;
+                right: 0.5rem;
+                border-radius: 0.3rem;
+                background-color: $laranja;
+                padding: 0rem 0.3rem 0rem 0.3rem;
+                font-family: Averta-ExtraBold;
+                color: $aurora;
+                font-size: 0.9rem;
+            }
+            @include xl{
+                margin: 0rem 0rem 1.5rem 0rem;
+                &:last-child{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+//********** REVIEWS **********
+.review{
+    .review-title{
+        @include xl{
+            display: flex;
+            justify-content: center;
+        }
+        h6{
+            color: $laranja;
+            font-family: Averta-ExtraBold;
+            font-size: 1.3rem;
+            &::after{
+                width: 57.9rem;
+                content: '';
+                position: absolute;
+                border-bottom: 0.1rem solid $laranja;
+                margin: 0.67rem 0rem 0rem 0.5rem;
+                @include lg{
+                    display: none !important;
+                }
+                @include xll{
+                    width: 69rem;
+                }
+            }
+        }
+    }
+    .review-container{
+        .review-article{
+            width: 13.5rem;
+            height: 10rem;
+            background-color: $laranja;
+            border-radius: 2rem 2rem 0.5rem 0.5rem;
+            cursor: pointer;
+            .review-thumb{
+                width: 100%;
+                height: 7.5rem;
+                object-fit: cover;
+                border-radius: 0.5rem 0.5rem 0rem 0rem;
+            }
+            .review-title{
+                padding: 0rem 0.5rem 0rem 0.5rem;
+                margin: 0.58rem 0rem 0rem 0rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-family: Averta-ExtraBold;
+                font-size: 1.1rem;
+            }
+            @include lg{
+                cursor: initial;
+            }
+            @include sm{
+                width: 100%;
+            }
+            @include xll{
+                width: 15.8rem;
+            }
+        }
+    }
+}
+
+//********** POSTAGENS **********
+.postList-title{
+    @include xl{
+        display: flex;
+        justify-content: center;
+    }
+    h6{
+        color: $laranja;
+        font-family: Averta-ExtraBold;
+        font-size: 1.3rem;
+        &::after{
+            width: 56.8rem;
+            content: '';
+            position: absolute;
+            border-bottom: 0.1rem solid $laranja;
+            margin: 0.67rem 0rem 0rem 0.5rem;
+            @include lg{
+                display: none !important;
+            }
+            @include xll{
+                width: 68rem;
+            }
+        }
+    }
+}
+
+.postList{
+    margin: -1rem 0rem 0rem 0rem;
+    .postList-article{
+        padding: 1rem 0rem 1rem 0rem;
+        border-bottom: 0.1rem solid $azul-claro-01;
+        cursor: pointer;
+        &:last-child{
+            border: 0 !important;
+        }
+        .postList-thumb{
+            width: 11rem;
+            height: 6rem;
+            object-fit: cover;
+            border-radius: 0.5rem;
+        }
+        .postList-title{
+            width: auto;
+            height: 3.6rem;
+            margin: -6rem 0rem 0rem 12.5rem;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            font-family: Averta-ExtraBold;
+            font-size: 1.5rem;
+            color: $laranja;
+            @include md{
+                height: 3.9rem;
+                -webkit-line-clamp: 3;
+                font-size: 1.1rem;
+            }
+        }
+        .postList-count{
+            top: 1.3rem;
+            left: 8rem;
+            border-radius: 0.3rem;
+            background-color: $azul-claro-01;
+            padding: 0rem 0.3rem 0rem 0.3rem;
+            font-family: Averta-ExtraBold;
+            color: $aurora;
+            font-size: 0.9rem;
+        }
+        .postList-tag{
+            margin: 0.6rem 0rem 0rem 11.5rem;
+            .postList-tagIcon{
+                width: 1.5rem;
+                height: auto;
+                filter: invert(29%) sepia(85%) saturate(3094%) hue-rotate(203deg) brightness(103%) contrast(107%);
+            }
+        }
+        .postList-credits{
+            margin: -1.25rem 0rem 0rem 0rem;
+            .postList-creditsAuthor{
+                width: 14.5rem;
+                height: auto;
+                border-radius: 0.3rem;
+                padding: 0.05rem 0.5rem 0.05rem 0.5rem;
+                background-color: $azul-claro-01;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                color: $aurora;
+                font-family: Averta-ExtraBold;
+                
+            }
+            .postList-creditsDate{
+                width: auto;
+                height: auto;
+                border-radius: 0.3rem;
+                padding: 0.05rem 0.5rem 0.05rem 0.5rem;
+                background-color: $azul-medio-01;
+                color: $aurora;
+                font-family: Averta-ExtraBold;
+            }
+            @include lg{
+                display: none !important;
+            }
+        }
+        @include md{
+            cursor: pointer;
+        }
+    }
+}
+
+.postShow{
+    .postShow-title{
+        padding: 0.75rem 1rem 0.7rem 1rem;
+        background-color: $laranja;
+        border-radius: 0.5rem;
+        font-family: Averta-ExtraBold;
+        font-size: 1.5rem;
+        color: $aurora;
+    }
+    .postShow-thumb{
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+    .postShow-text{
+        color: $aurora;
+        p{
+            color: $aurora;
+        }
+    }
+}
+
+.postShow-reaction{
+    .postShow-reactionDescription{
+        width: 20rem;
+        color: $laranja;
+        font-size: 1.8rem;
+    }
+    .postShow-reactionIcon{
+        width: 4rem;
+        cursor: pointer;
+        @include lg{
+            cursor: initial;
+        }
+    }
+}
+
+.postShow-comments{
+    .postShow-commentsContainer{
+        .postShow-commentsBtn{
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            border: 0.1rem solid $azul-claro-01;
+            border-radius: 0.5rem;
+            background-color: $aurora;
+            color: $azul-claro-01;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.postShow-credits{
+    .postShow-author{
+        width: 25rem;
+        height: 8rem;
+        background-color: $azul-claro-01;
+        border-radius: 0.5rem;
+        .postShow-title{
+            margin: -2rem 0rem 0rem 0rem;
+            color: $laranja;
+            font-size: 1.3rem;
+        }
+        .postShow-name{
+            width: 15rem;
+            padding: 0.5rem 0rem 0rem 0.5rem;
+            font-family: Averta-ExtraBold;
+            color: $aurora;
+            font-size: 1.5rem;
+        }
+        .postShow-authorAvatar{
+            width: 8rem;
+            margin: -5.95rem 0rem 0rem 0rem;
+        }
+        @include lg{
+            width: 100%;
+        }
+    }
+    .postShow-fontDate{
+        margin: -2rem 0rem 0rem 0rem;
+        .postShow-fontContainer{
+            .postShow-fontTitle{
+                color: $laranja;
+                font-size: 1.3rem;
+            }
+            .postShow-font{
+                width: 26.4rem;
+                padding: 0.1rem 0rem 0rem 0rem;
+                border-radius: 0.3rem;
+                background-color: $azul-claro-01;
+                font-size: 1.5rem;
+                font-family: Averta-ExtraBold;
+                color: $aurora;
+                @include lg{
+                    width: 100%;
+                }
+            }
+        }
+        .postShow-dateContainer{
+            margin: 1.7rem 0rem 0rem 0rem;
+            .postShow-dateTitle{
+                margin: 0.2rem 0rem 0rem 0rem;
+                color: $laranja;
+                font-size: 1.3rem;
+            }
+            .postShow-date{
+                width: 44%;
+                border-radius: 0.3rem;
+                background-color: $azul-claro-01;
+                font-family: Averta-ExtraBold;
+                color: $aurora;
+                font-size: 1.5rem;
+                @include lg{
+                    width: 100%;
+                }
+            }
+            @include lg{
+                margin: 0;
+            }
+        }
+        @include lg{
+            margin: 0;
+        }
+    }
+}
+
+.postShow-review{
+    .postShow-reviewTitle{
+        color: $aurora;
+        font-size: 1.2rem;
+    }
+    .postShow-reviewDetails{
+        background-color: $azul-claro-01;
+        border-radius: 0.5rem;
+        summary{
+            font-family: Averta-ExtraBold;
+            color: $aurora;
+            font-size: 1.5rem;
+            list-style: none;
+            &::-webkit-details-marker {
+                display: none
+            }
+        }
+        p{
+            color: $aurora;
+        }
+    }
+}
+
+//********** CATEGORIAS **********
+.category{
+    .category-title{
+        @include xl{
+            display: flex;
+            justify-content: center;
+        }
+        h6{
+            color: $laranja;
+            font-family: Averta-ExtraBold;
+            font-size: 1.3rem;
+            &::after{
+                width: 61rem;
+                content: '';
+                position: absolute;
+                border-bottom: 0.1rem solid $laranja;
+                margin: 0.67rem 0rem 0rem 0.5rem;
+                @include lg{
+                    display: none !important;
+                }
+                @include xll{
+                    width: 72.2rem;
+                }
+            }
+        }
+    }
+    .category-container{
+         .category-btn{
+            margin: 0.2rem;
+            padding: 0.5rem 1rem 0.4rem 1rem;
+            border: 0.2rem solid $preto;
+            border-radius: 0.8rem;
+            font-family: Averta-ExtraBold;
+            font-size: 1.2rem;
+            .category-btnIcon{
+                width: 1rem;
+                height: auto;
+            }
+        }
+    }
+}
+
+//********** CALENDÁRIO **********
+.calendar-title{
+    @include xl{
+        display: flex;
+        justify-content: center;
+    }
+    h6{
+        color: $laranja;
+        font-family: Averta-ExtraBold;
+        font-size: 1.3rem;
+        &::after{
+            width: 54rem;
+            content: '';
+            position: absolute;
+            border-bottom: 0.1rem solid $laranja;
+            margin: 0.67rem 0rem 0rem 0.5rem;
+            @include lg{
+                display: none !important;
+            }
+            @include xll{
+                width: 65.2rem;
+            }
+        }
+    }
+}
+
+.calendar{
+    .calendar-table{
+        border-collapse: separate;
+        border-spacing: 0.5rem;
+        margin: -0.9rem 0rem 0rem -0.5rem;
+        thead{
+            tr{
+                th{
+                    color: $cinza-claro-01;
+                    font-family: Averta-ExtraBold;
+                }
+            }
+        }
+        tbody{
+            tr{
+                cursor: pointer;
+                td{
+                    background-color: $azul-claro-01;
+                    font-family: Averta-ExtraBold;
+                    color: $aurora;
+                    &:nth-child(1){
+                        background-color: $laranja;
+                        color: $preto;
+                    }
+                }
+                @include md{
+                    cursor: initial;
+                }
+            }
+        }
+        @include sm{
+            margin: -0.9rem 0rem 0rem 0rem;
+        }
+    }
+}
+
+//********** AKIBACAST **********
+.akibacast{
+    .akibacast-title{
+        @include xl{
+            display: flex;
+            justify-content: center;
+        }
+        h6{
+            color: $laranja;
+            font-family: Averta-ExtraBold;
+            font-size: 1.3rem;
+            &::after{
+                width: 61.9rem;
+                content: '';
+                position: absolute;
+                border-bottom: 0.1rem solid $laranja;
+                margin: 0.67rem 0rem 0rem 0.5rem;
+                @include lg{
+                    display: none !important;
+                }
+                @include xll{
+                    width: 73.1rem;
+                }
+            }
+        }
+    }
+    .akibacast-container{
+        .akibacast-article{
+            width: 17rem;
+            height: 21.3rem;
+            background-color: $laranja;
+            border-radius: 2rem 2rem 0rem 0rem;
+            cursor: pointer;
+            .akibacast-thumb{
+                width: 100%;
+            }
+            .akibacast-title{
+                padding: 0.3rem 0.5rem 0rem 0.5rem;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+                font-family: Averta-ExtraBold;
+            }
+            @include md{
+                cursor: initial;
+            }
+            @include xll{
+                width: 19.8rem;
+                height: 24rem;
+            }
+        }
+    }
+}
+
+.akibacastList-title{
+    @include xl{
+        display: flex;
+        justify-content: center;
+    }
+    h6{
+        color: $laranja;
+        font-family: Averta-ExtraBold;
+        font-size: 1.3rem;
+        &::after{
+            width: 61.9rem;
+            content: '';
+            position: absolute;
+            border-bottom: 0.1rem solid $laranja;
+            margin: 0.67rem 0rem 0rem 0.5rem;
+            @include lg{
+                display: none !important;
+            }
+            @include xll{
+                width: 73.1rem;
+            }
+        }
+    }
+}
+
+.akibacastList-container{
+    margin: -0.8rem 0rem 0rem 0rem;
+    .akibacastList-article{
+        border-bottom: 0.1rem solid $azul-claro-01;
+        padding: 0.8rem 0rem 1.5rem 0rem;
+        cursor: pointer;
+        &:last-child{
+            border: 0 !important;
+            padding: 0.8rem 0rem 0rem 0rem;
+        }
+        .akibacastList-season{
+            margin: 0rem 0rem 0rem 11rem;
+            font-family: Averta-ExtraBold;
+            color: $laranja;
+            font-size: 2rem;
+        }
+        .akibacastList-title{
+            margin: 0rem 0rem 0rem 11rem;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            font-family: Averta-ExtraBold;
+            color: $laranja;
+            font-size: 1.5rem;
+        }
+        .akibacastList-thumb{
+            width: 10rem;
+            margin: -3.5rem 0rem 0rem 0rem;
+            @include lg{
+                margin: -5.5rem 0rem 0rem 0rem;
+            }  
+        }
+        .akibacastList-description{
+            margin: -6rem 0rem 0rem 11rem;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+            color: $aurora;
+            @include lg{
+                margin: -4.7rem 0rem 0rem 11rem;
+                -webkit-line-clamp: 3;
+            }  
+        }
+        @include lg{
+            cursor: initial;
+        }
+    }
+}
+
+//********** PARCEIROS **********
+.partner{
+    .partner-title{
+        @include xl{
+            display: flex;
+            justify-content: center;
+        }
+        h6{
+            color: $laranja;
+            font-family: Averta-ExtraBold;
+            font-size: 1.3rem;
+            &::after{
+                width: 62.5rem;
+                content: '';
+                position: absolute;
+                border-bottom: 0.1rem solid $laranja;
+                margin: 0.67rem 0rem 0rem 0.5rem;
+                @include lg{
+                    display: none !important;
+                }
+                @include xll{
+                    width: 73.7rem;
+                }
+            }
+        }
+    }
+    .partner-container{
+        a{
+            img{
+                width: 5.35rem;
+                height: 2rem;
+                border-radius: 0.3rem;
+            }
+        }
+    }
+}
+
+//********** GRADE DE PROGRAMAÇÃO **********
+.schedule-title{
+    @include xl{
+        display: flex;
+        justify-content: center;
+    }
+    h6{
+        color: $laranja;
+        font-family: Averta-ExtraBold;
+        font-size: 1.3rem;
+        &::after{
+            width: 52.9rem;
+            content: '';
+            position: absolute;
+            border-bottom: 0.1rem solid $laranja;
+            margin: 0.67rem 0rem 0rem 0.5rem;
+            @include lg{
+                display: none !important;
+            }
+            @include xll{
+                width: 64.1rem;
+            }
+        }
+    }
+}
+
+.schedule{
+    margin: -2.5rem 0rem 0rem 0rem;
+    .schedule-container{
+        width: 25.4rem;
+        height: 4rem;
+        margin: 7rem 0rem 0rem 0rem;
+        background-color: $aurora;
+        border-radius: 0.5rem;
+        .schedule-day{
+            width: 8.3rem;
+            height: auto;
+            margin: 0.85rem 0rem 0rem 0rem;
+            h5{
+                font-family: Averta-ExtraBold;
+                color: $preto;
+                font-size: 1rem;
+            }
+            h6{
+                color: $preto;
+                font-size: 1rem;
+            }
+        }
+        .schedule-streamer{
+            width: 8.5rem;
+            height: auto;
+            margin: -2.4rem 0rem 0rem 8.5rem;
+            h5{
+                font-family: Averta-ExtraBold;
+                color: $azul-claro-01;
+                font-size: 1rem;
+            }
+            h6{
+                font-size: 1rem;
+                color: $azul-claro-01;
+            }
+        }
+        .schedule-programLogo{
+            width: 11rem;
+            margin: -9rem 0rem 0rem 0rem;
+        }
+        .schedule-avatar{
+            width: 8rem;
+            margin: -8.6rem 0rem 0rem 0rem;
+            @include xs{
+                display: none;
+            }
+        }
+        @include xll{
+            width: 29.5rem;
+        }
+    }
+}
+
+//********** BATALHA DE PLAYLISTS **********
+.playlistsBattle{
+    background-color: $azul-medio-02;
+    .playlistsBattle-container{
+        .playlistsBattle-title{
+            @include xl{
+                display: flex;
+                justify-content: center;
+            }
+            h6{
+                color: $laranja;
+                font-family: Averta-ExtraBold;
+                font-size: 1.3rem;
+                &::after{
+                    width: 55.7rem;
+                    content: '';
+                    position: absolute;
+                    border-bottom: 0.1rem solid $laranja;
+                    margin: 0.67rem 0rem 0rem 0.5rem;
+                    @include lg{
+                        display: none !important;
+                    }
+                    @include xll{
+                        width: 67rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//********** RANKING **********
+.rankingOne{
+    .rankingOne-title{
+        @include xl{
+            display: flex;
+            justify-content: center;
+        }
+        h6{
+            color: $laranja;
+            font-family: Averta-ExtraBold;
+            font-size: 1.3rem;
+            &::after{
+                width: 53.4rem;
+                content: '';
+                position: absolute;
+                border-bottom: 0.1rem solid $laranja;
+                margin: 0.67rem 0rem 0rem 0.5rem;
+                @include lg{
+                    display: none !important;
+                }
+                @include xll{
+                    width: 64.9rem;
+                }
+            }
+        }
+    }
+    .rankingOne-container{
+        flex-wrap: wrap-reverse;
+        .rankingOne-content{
+            width: 27rem;
+            height: 7rem;
+            background-color: $laranja;
+            border-radius: 0.5rem;
+            margin: 3rem 0rem 0rem 0rem;
+            .rankingOne-title{
+                margin: -2rem 0rem 0rem 0rem;
+                font-family: Averta-ExtraBold;
+                font-size: 1.3rem;
+                color: $aurora;
+                .rankingOne-titleSpan{
+                    margin: -0.3rem 0rem 0rem 0rem;
+                    font-size: 0.7rem;
+                }
+            }
+            .rankingOne-music{
+                width: 18rem;
+                height: 3rem;
+                margin: 1rem 0rem 0rem 0.5rem;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                font-family: Averta-ExtraBold;
+                color: $aurora;
+                font-size: 1.2rem;
+            }
+            .rankingOne-singer, .rankingOne-anime{
+                margin: 0rem 0rem 0rem 0.5rem;
+                font-size: 0.8rem;
+                color: $aurora;
+            }
+            .rankingOne-singer{
+                margin: 1rem 0rem 0rem 0.5rem;
+            }
+            .rankingOne-avatar{
+                width: 8rem;
+                margin: -5.85rem 0rem 0rem 0rem;
+            }
+        }
+        @include lg{
+            display: none !important;
+        }
+    }
+}
+
+.rankingTwo-table{
+    border-top: 0.1rem solid $aurora;
+    tbody{
+        tr{
+            td{
+                &:nth-child(1){
+                    width: 9rem;
+                    padding: 0.5rem 0rem 0rem 0rem;
+                    h6{
+                        font-family: Averta-ExtraBold;
+                        font-size: 1.3rem;
+                        color: $aurora;
+                    }
+                    span{
+                        font-size: 0.8rem;
+                        color: $aurora;
+                    }
+                    div{
+                        height: 2.8rem;
+                        margin: -2.75rem 0rem 0rem 0rem;
+                        border-right: 0.1rem solid $aurora;
+                    }
+                }
+                &:nth-child(2){
+                    h6{
+                        font-family: Averta-ExtraBold;
+                        color: $laranja !important;
+                        font-size: 1.3rem;
+                    }
+                    div{
+                        margin: 0.2rem 0rem 0rem 0rem;
+                        h6{
+                            &:nth-child(1){
+                                margin: 0rem 0rem 0rem 5rem;
+                                color: $azul-claro-01 !important;
+                                font-family: Averta-Regular;
+                                font-size: 0.8rem;
+                            }
+                            &:nth-child(2){
+                                margin: 0rem 5rem 0rem 0rem;
+                                color: $azul-claro-01 !important;
+                                font-family: Averta-Regular;
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include lg{
+        display: none !important;
+    }
+}
+
+.rankingThree{
+    .rankingThree-item{
+        padding: 0.5rem;
+        margin: 0.5rem 0rem 0rem 0rem;
+        border-radius: 0.5rem;
+        background-color: $azul-claro-01;
+        list-style: none;
+        font-family: Averta-ExtraBold;
+        color: $aurora;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+    }
+}
+
+//********** OUVINTE DO MÊS **********
+.listenerMonth{
+    background-color: $azul-medio-02;
+    .listenerMonth-title{
+        @include xl{
+            display: flex;
+            justify-content: center;
+        }
+        h6{
+            color: $laranja;
+            font-family: Averta-ExtraBold;
+            font-size: 1.3rem;
+            &::after{
+                width: 59.1rem;
+                content: '';
+                position: absolute;
+                border-bottom: 0.1rem solid $laranja;
+                margin: 0.67rem 0rem 0rem 0.5rem;
+                @include lg{
+                    display: none !important;
+                }
+                @include xll{
+                    width: 70.5rem;
+                }
+            }
+        }
+    }
+    .listenerMonth-content{
+        height: 18rem;
+        .listenerMonth-name{
+            .block-start{
+                width: 50%;
+                @include lg{
+                    width: 100%;
+                }
+            }
+        }
+        .listenerMonth-information{
+            width: 70%;
+            height: 12rem;
+            color: $aurora;
+            @include lg{
+                width: 100%;
+            }
+        }
+        .listenerMonth-avatar{
+            width: 15.5rem;
+            margin: -17.3rem 0rem 0rem 0rem;
+            @include lg{
+                display: none;
+            }
+        }
+    }
+}
+
+//********** SOBRE O SITE **********
+.about{
+    .about-title{
+        @include xl{
+            display: flex;
+            justify-content: center;
+        }
+        h6{
+            color: $laranja;
+            font-family: Averta-ExtraBold;
+            font-size: 1.3rem;
+            &::after{
+                width: 57.1rem;
+                content: '';
+                position: absolute;
+                border-bottom: 0.1rem solid $laranja;
+                margin: 0.67rem 0rem 0rem 0.5rem;
+                @include lg{
+                    display: none !important;
+                }
+                @include xll{
+                    width: 68.3rem;
+                }
+            }
+        }
+    }
+    .about-container{
+        .about-content{
+            width: 70%;
+            .about-title{
+                font-family: Averta-ExtraBold;
+                color: $azul-claro-01;
+                font-size: 2rem;
+            }
+            .about-history{
+                color: $aurora;
+            }
+            @include lg{
+                width: 100%;
+            }
+        }
+    }
+}
+
+//********** EQUIPE **********
+.office{
+    .office-title{
+        @include xl{
+            display: flex;
+            justify-content: center;
+        }
+        h6{
+            color: $laranja;
+            font-family: Averta-ExtraBold;
+            font-size: 1.3rem;
+            &::after{
+                width: 60.8rem;
+                content: '';
+                position: absolute;
+                border-bottom: 0.1rem solid $laranja;
+                margin: 0.67rem 0rem 0rem 0.5rem;
+                @include lg{
+                    display: none !important;
+                }
+                @include xll{
+                    width: 72rem;
+                }
+            }
+        }
+    }
+    .office-container{
+        .office-btn{
+           margin: 0.2rem;
+           padding: 0.5rem 1rem 0.4rem 1rem;
+           border: 0.2rem solid $preto;
+           border-radius: 0.8rem;
+           font-family: Averta-ExtraBold;
+           font-size: 1.2rem;
+           .office-btnIcon{
+               width: 1rem;
+               height: auto;
+           }
+       }
+   }
+}
+
+.team-title{
+    @include xl{
+        display: flex;
+        justify-content: center;
+    }
+    h6{
+        color: $laranja;
+        font-family: Averta-ExtraBold;
+        font-size: 1.3rem;
+        &::after{
+            width: 52.9rem;
+            content: '';
+            position: absolute;
+            border-bottom: 0.1rem solid $laranja;
+            margin: 0.67rem 0rem 0rem 0.5rem;
+            @include lg{
+                display: none !important;
+            }
+            @include xll{
+                width: 64.1rem;
+            }
+        }
+    }
+}
+
+.team-userList{
+    .team-userListItem{
+        width: 100%;
+        list-style: none;
+        cursor: pointer;
+        background-color: $laranja;
+        border-radius: 0.3rem;
+        padding: 0rem 0rem 0rem 0.5rem;
+        margin: 0rem 0rem 0.5rem 0rem;
+        font-size: 1.1rem;
+        color: $aurora;
+        @include lg{
+            cursor: initial;
+        }
+    }
+}
+
+.team-profile{
+    .team-identifier{
+        .team-nickName{
+            font-family: Averta-ExtraBold;
+            color: $aurora;
+            font-size: 2.5rem;
+        }
+        .team-name{
+            color: $laranja;
+        }
+    }
+    .team-container{
+        width: 100%;
+        height: 8rem;
+        border-radius: 0.5rem;
+        margin: 0rem 0rem 0rem 0rem;
+        background-color: $azul-claro-01;
+        .team-social{
+            padding: 1.7rem 0rem 0rem 0rem;
+            a{
+                color: $aurora;
+                font-size: 3rem;
+            }
+        }
+        .team-avatar{
+            width: 12rem;
+            margin: -12.2rem 1rem 0rem 0rem;
+            @include lg{
+                display: none;
+            }
+        }
+    }
+    .team-dice{
+        .team-office{
+            padding: 0rem 0.5rem 0rem 0.5rem;
+            border-radius: 0.3rem;
+            background-color: $aurora;
+            color: $azul-medio-01;
+            font-family: Averta-ExtraBold;
+            font-size: 1.1rem;
+        }
+        .team-localization, .team-age{
+            padding: 0rem 0.5rem 0rem 0.5rem;
+            border-radius: 0.3rem;
+            background-color: $aurora;
+            color: $azul-claro-01;
+            font-family: Averta-ExtraBold;
+            font-size: 1.1rem;
+        }
+    }
+    .team-description{
+        color: $aurora;
+    }
+    .team-like, .team-deslike{
+        h6{
+            color: $laranja;
+            font-family: Averta-ExtraBold;
+            font-size: 1.2rem;
+        }
+        ul{
+            li{
+                width: 20rem;
+                margin: 0rem 0rem 0.5rem 0rem;
+                padding: 0rem 1rem 0rem 1rem;
+                border-radius: 0.3rem;
+                background-color: $azul-claro-01;
+                list-style: none;
+                color: $aurora;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+//********** ENQUETES **********
+.survey{
+    .survey-title{
+        @include xl{
+            display: flex;
+            justify-content: center;
+        }
+        h6{
+            color: $laranja;
+            font-family: Averta-ExtraBold;
+            font-size: 1.3rem;
+            &::after{
+                width: 63rem;
+                content: '';
+                position: absolute;
+                border-bottom: 0.1rem solid $laranja;
+                margin: 0.67rem 0rem 0rem 0.5rem;
+                @include lg{
+                    display: none !important;
+                }
+                @include xll{
+                    width: 74rem;
+                }
+            }
+        }
+    }
+    .survey-container{
+        .survey-content{
+            width: 22.58rem;
+            border-radius: 0.5rem;
+            background-color: $azul-medio-01;
+            .survey-title{
+                font-family: Averta-ExtraBold;
+                font-size: 1.2rem;
+                color: $aurora;
+            }
+            form{
+                div{
+                    label{
+                        color: $aurora;
+                        font-size: 0.9rem;
+                    }
+                }
+                button{
+                    background-color: $azul-claro-01;
+                    font-family: Averta-ExtraBold;
+                    color: $aurora;
+                    font-size: 0.9rem;
+                }
+            }
+            @include lg{
+                width: 100%;
+            }
+            @include xll{
+                width: 26.3rem;
+            }
+        }
+    }
+}
+
+//********** ENQUETES **********
+.events{
+    .events-title{
+        @include xl{
+            display: flex;
+            justify-content: center;
+        }
+        h6{
+            color: $laranja;
+            font-family: Averta-ExtraBold;
+            font-size: 1.3rem;
+            &::after{
+                width: 48.8rem;
+                content: '';
+                position: absolute;
+                border-bottom: 0.1rem solid $laranja;
+                margin: 0.67rem 0rem 0rem 0.5rem;
+                @include lg{
+                    display: none !important;
+                }
+                @include xll{
+                    width: 60rem;
+                }
+            }
+        }
+    }
+    .events-container{
+        .events-content{
+            width: 13.5rem;
+            cursor: pointer;
+            .events-thumb{
+                width: 100%;
+                height: 7.5rem;
+                object-fit: cover;
+                border-radius: 0.5rem;
+            }
+            .events-localization, .events-date{
+                width: 100%;
+                border-radius: 0.3rem;
+                padding: 0.1rem 0rem 0.1rem 0rem;
+                background-color: $laranja;
+                text-align: center;
+                font-family: Averta-ExtraBold;
+                color: $aurora;
+                font-size: 1.2rem;
+            }
+            @include lg{
+                width: 100%;
+                cursor: initial;
+            }
+            @include xll{
+                width: 15.8rem;
+            }
+        }
+    }
+}
+
+//********** YOUTUBE VÍDEOS **********
+.youtube-videos{
+    .youtube-videosTitle{
+        @include xl{
+            display: flex;
+            justify-content: center;
+        }
+        h6{
+            color: $laranja;
+            font-family: Averta-ExtraBold;
+            font-size: 1.3rem;
+            &::after{
+                width: 56.1rem;
+                content: '';
+                position: absolute;
+                border-bottom: 0.1rem solid $laranja;
+                margin: 0.67rem 0rem 0rem 0.5rem;
+                @include lg{
+                    display: none !important;
+                }
+                @include xll{
+                    width: 67.3rem;
+                }
+            }
+        }
+    }
+    .youtube-videosContainer{
+        iframe{
+            width: 17rem;
+            height: 12rem;
+            border-radius: 0.5rem;
+            @include lg{
+                width: 100%;
+                height: 18rem;
+            }
+            @include xll{
+                width: 19.8rem;
+            }
+        }
+    }
+}
+
+//********** TRANSMISSÕES EM VÍDEO **********
+.streamingVideo{
+    .streamingVideo-title{
+        @include xl{
+            display: flex;
+            justify-content: center;
+        }
+        h6{
+            color: $laranja;
+            font-family: Averta-ExtraBold;
+            font-size: 1.3rem;
+            &::after{
+                width: 49.7rem;
+                content: '';
+                position: absolute;
+                border-bottom: 0.1rem solid $laranja;
+                margin: 0.67rem 0rem 0rem 0.5rem;
+                @include lg{
+                    display: none !important;
+                }
+                @include xll{
+                    width: 60.8rem;
+                }
+            }
+        }
+    }
+    .streamingVideo-container{
+        iframe{
+            width: 100%;
+            height: 35rem;
+            border-radius: 0.5rem;
+        }
+    }
+}
+
+//********** DIRETRIZES **********
+.guidelines{
+    p{
+        color: $azul-claro-01;
+    }
+    div{
+        button{
+            border-radius: 0.5rem;
+            background-color: $laranja;
+            color: $aurora;
+            font-family: Averta-ExtraBold;
+            &:hover{
+                border-radius: 0.5rem;
+                background-color: $laranja;
+                color: $aurora;
+                font-family: Averta-ExtraBold; 
+            }
+        }
+    }
+}
+
+//********** RECRUTAMENTO **********
+.recruitment-title{
+    @include xl{
+        display: flex;
+        justify-content: center;
+    }
+    h6{
+        color: $laranja;
+        font-family: Averta-ExtraBold;
+        font-size: 1.3rem;
+        &::after{
+            width: 50rem;
+            content: '';
+            position: absolute;
+            border-bottom: 0.1rem solid $laranja;
+            margin: 0.67rem 0rem 0rem 0.5rem;
+            @include lg{
+                display: none !important;
+            }
+            @include xll{
+                width: 61rem;
+            }
+        }
+    }
+}
+
+.recruitment-form{
+    div{
+        label{
+            color: $aurora;
+            font-family: Averta-ExtraBold;
+        }
+        input, textarea, select{
+            border-radius: 0.5rem;
+            margin: -0.2rem 0rem 0rem 0rem;
+            resize: none;
+        }
+        button{
+            border-radius: 0.5rem;
+            border: 0.15rem solid $laranja;
+            color: $laranja;
+            font-family: Averta-ExtraBold;
+            &:hover{
+                border-radius: 0.5rem;
+                border: 0.15rem solid $laranja;
+                color: $laranja;
+                font-family: Averta-ExtraBold;
+            }
+        }
+    }
+}
+
+.recruitment-requirement{
+    border-bottom: 0.1rem solid $azul-claro-01;
+    h6{
+        color: $cinza-claro-01;
+        font-family: Averta-ExtraBold;
+        font-size: 1.3rem;
+    }
+    ul{
+        padding: 0rem 0rem 0.3rem 1.2rem;
+        li{
+            color: $azul-claro-01;
+        }
+    }
+}
+
+//********** RECRUTAMENTO **********
+.advertise{
+    background-color: $azul-escuro-03;
+}
+
+.advertise-title{
+    @include xl{
+        display: flex;
+        justify-content: center;
+    }
+    h6{
+        color: $laranja;
+        font-family: Averta-ExtraBold;
+        font-size: 1.3rem;
+        &::after{
+            width: 59.5rem;
+            content: '';
+            position: absolute;
+            border-bottom: 0.1rem solid $laranja;
+            margin: 0.67rem 0rem 0rem 0.5rem;
+            @include lg{
+                display: none !important;
+            }
+            @include xll{
+                width: 71rem;
+            }
+        }
+    }
+}
+
+.advertise-form{
+    div{
+        label{
+            color: $aurora;
+            font-family: Averta-ExtraBold;
+        }
+        input, textarea, select{
+            border-radius: 0.5rem;
+            margin: -0.2rem 0rem 0rem 0rem;
+            resize: none;
+        }
+        button{
+            border-radius: 0.5rem;
+            border: 0.15rem solid $laranja;
+            color: $laranja;
+            font-family: Averta-ExtraBold;
+            &:hover{
+                border-radius: 0.5rem;
+                border: 0.15rem solid $laranja;
+                color: $laranja;
+                font-family: Averta-ExtraBold;
+            }
+        }
+    }
+}
+
+//********** PARCERIA **********
+.partner-title{
+    @include xl{
+        display: flex;
+        justify-content: center;
+    }
+    h6{
+        color: $laranja;
+        font-family: Averta-ExtraBold;
+        font-size: 1.3rem;
+        &::after{
+            width: 59.5rem;
+            content: '';
+            position: absolute;
+            border-bottom: 0.1rem solid $laranja;
+            margin: 0.67rem 0rem 0rem 0.5rem;
+            @include lg{
+                display: none !important;
+            }
+            @include xll{
+                width: 71rem;
+            }
+        }
+    }
+}
+
+.partner-form{
+    div{
+        label{
+            color: $aurora;
+            font-family: Averta-ExtraBold;
+        }
+        input, textarea, select{
+            border-radius: 0.5rem;
+            margin: -0.2rem 0rem 0rem 0rem;
+            resize: none;
+        }
+        button{
+            border-radius: 0.5rem;
+            border: 0.15rem solid $laranja;
+            color: $laranja;
+            font-family: Averta-ExtraBold;
+            &:hover{
+                border-radius: 0.5rem;
+                border: 0.15rem solid $laranja;
+                color: $laranja;
+                font-family: Averta-ExtraBold;
+            }
+        }
+    }
+}
+
+//********** POSTAGENS RECOMENDADAS **********
+.tag{
+    .tag-title{
+        color: $laranja;
+        font-family: Averta-ExtraBold;
+        font-size: 1.3rem;
+    }
+    .tag-container{
+        border-radius: 0.5rem;
+        background-color: $azul-claro-01;
+        padding: 0.8rem;
+        .tag-name{
+            color: $aurora;
+            font-size: 1.3rem;
+            font-family: Averta-ExtraBold;
+        }
+        .tag-description{
+            font-size: 0.9rem;
+            color: $aurora;
+        }
+    }
+}
+
+.recommend{
+    .recommend-title{
+        font-size: 1.5rem;
+        color: $laranja;
+        font-family: Averta-ExtraBold;
+    }
+    .recommend-article{
+        .recommend-title{
+            font-family: Averta-Regular;
+            font-size: 0.9rem;
+            color: $aurora;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+        }
+        .recommend-thumb{
+            width: 8rem;
+            height: 5rem;
+            border-radius: 0.5rem;
+            object-fit: cover;
+        }
+    }
+}

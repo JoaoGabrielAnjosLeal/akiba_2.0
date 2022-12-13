@@ -22,6 +22,17 @@
     <link rel="stylesheet" href="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!--PWA--> 
+    <link rel="manifest" href="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Akiba">
+    <meta name="apple-mobile-web-app-title" content="Akiba">
+    <meta name="theme-color" content="#0076fe">
+    <meta name="msapplication-navbutton-color" content="#0076fe">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="http://localhost/rede_akiba_2.0">
+    <link rel="apple-touch-icon" type="image/png" sizes="200x200" href="https://i.imgur.com/y8Xio54.png">
 </head>
 <body class="body">
 

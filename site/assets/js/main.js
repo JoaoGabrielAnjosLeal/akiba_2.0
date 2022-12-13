@@ -8,6 +8,18 @@ if(window.screen.width < '992'){
         $('.nav-list').animate({'width': 'toggle'}, 500);
     });
 }
+/**************** PWA *****************/
+if ("serviceWorker" in navigator) {
+    if (navigator.serviceWorker.controller) {
+        console.log("[Akiba PWA] Um service worker ativado foi encontrado, não há necessidade de registrar um novo");
+    } else {
+    navigator.serviceWorker
+        .register("sw.js")
+        .then(function(reg) {
+            console.log("[Akiba PWA] O service worker ativado foi registrado para o escopo: " + reg.scope);
+        });
+    }
+}
 
 //********** SELETOR DE TEMAS **********
 $('.nav-theme').click(function(){

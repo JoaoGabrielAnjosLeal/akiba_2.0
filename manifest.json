@@ -1,0 +1,18 @@
+{ 
+  "name": "Rede Akiba", 
+  "short_name": "Akiba", 
+  "description": "O Paraíso dos Otakus", 
+  "lang": "pt-BR", 
+  "start_url": "./", 
+  "scope": "./", 
+  "display": "standalone", 
+  "theme_color": "#0076fe", 
+  "icons": [ 
+    { 
+      "src": "https://i.imgur.com/y8Xio54.png", 
+      "sizes": "200x200", 
+      "type": "image/png" 
+    } 
+  ], 
+  "background_color": "#050505" 
+}

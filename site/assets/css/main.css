@@ -104,7 +104,7 @@
 .block-start .block-container .block-title {
   margin: 0.5rem 0rem 0.6rem 0rem;
   font-family: Averta-ExtraBold;
-  color: #FFA919;
+  color: #FF9D1F;
   font-size: 2rem;
 }
 .block-start .block-description {
@@ -121,7 +121,7 @@
 .erro404 div button {
   padding: 0.3rem 0.5rem 0.35rem 0.5rem;
   border-radius: 0.5rem;
-  background-color: #FFA919;
+  background-color: #FF9D1F;
   color: #FFF6E6;
   font-family: Averta-ExtraBold;
 }
@@ -294,7 +294,7 @@
   margin: 0.5rem 0.5rem 0.45rem 0.5rem;
 }
 .header .nav .nav-themeSelector .nav-themeLight {
-  background-color: #FFA919;
+  background-color: #FF9D1F;
 }
 .header .nav .nav-themeSelector .nav-themeDark {
   background-color: #1a1a1a;
@@ -319,7 +319,7 @@
   color: #FFF6E6;
 }
 .footer .footer-container .footer-credits span {
-  color: #FFA919;
+  color: #FF9D1F;
 }
 
 .requestMusic-modal {
@@ -434,7 +434,7 @@
   margin: -5.8rem 0rem 0rem 17.5rem;
 }
 .player-top .streamer .streamer-genre {
-  color: #FFA919;
+  color: #FF9D1F;
 }
 .player-top .streamer .streamer-name {
   width: 14rem;
@@ -464,7 +464,7 @@
   margin: 5rem 0rem 0rem 0rem;
 }
 .player-top .playing .playing-title {
-  color: #FFA919;
+  color: #FF9D1F;
 }
 .player-top .playing .playing-container {
   width: 25rem;
@@ -511,7 +511,7 @@
 }
 .player-top .request-music .requestMusic-btn {
   padding: 0rem 0.6rem 0.1rem 0.6rem !important;
-  border: 0.2rem solid #FFA919;
+  border: 0.2rem solid #FF9D1F;
   border-radius: 0.5rem;
   color: #0076fe;
   font-family: Averta-ExtraBold;
@@ -519,10 +519,10 @@
 }
 .player-top .request-music .requestMusic-btn .requestMusic-btnSpan {
   font-family: Averta-ExtraBold;
-  color: #FFA919;
+  color: #FF9D1F;
 }
 .player-top .request-music .requestMusic-btn:hover {
-  border: 0.2rem solid #FFA919;
+  border: 0.2rem solid #FF9D1F;
   color: #0076fe;
 }
 @media (max-width: 1200px) {
@@ -534,11 +534,11 @@
   margin: -8rem 6.5rem 0rem 0rem;
 }
 .player-top .control .control-btn {
-  color: #FFA919;
+  color: #FF9D1F;
   font-size: 2.5rem;
 }
 .player-top .control .control-btn:hover {
-  color: #FFA919;
+  color: #FF9D1F;
 }
 .player-top .control .pause {
   display: none;
@@ -550,7 +550,7 @@
   left: 1.3rem;
   bottom: 5rem;
   border-radius: 0.5rem;
-  background-color: #FFA919;
+  background-color: #FF9D1F;
   transform: rotate(-90deg);
   display: none;
 }
@@ -690,7 +690,7 @@
   }
 }
 .highLight .highLight-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -698,7 +698,7 @@
   width: 56.6rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -772,7 +772,7 @@
   bottom: 0.5rem;
   right: 0.5rem;
   border-radius: 0.3rem;
-  background-color: #FFA919;
+  background-color: #FF9D1F;
   padding: 0rem 0.3rem 0rem 0.3rem;
   font-family: Averta-ExtraBold;
   color: #FFF6E6;
@@ -794,7 +794,7 @@
   }
 }
 .review .review-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -802,7 +802,7 @@
   width: 57.9rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -818,7 +818,7 @@
 .review .review-container .review-article {
   width: 13.5rem;
   height: 10rem;
-  background-color: #FFA919;
+  background-color: #FF9D1F;
   border-radius: 2rem 2rem 0.5rem 0.5rem;
   cursor: pointer;
 }
@@ -860,7 +860,7 @@
   }
 }
 .postList-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -868,7 +868,7 @@
   width: 56.8rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -909,7 +909,7 @@
   overflow: hidden;
   font-family: Averta-ExtraBold;
   font-size: 1.5rem;
-  color: #FFA919;
+  color: #FF9D1F;
 }
 @media (max-width: 768px) {
   .postList .postList-article .postList-title {
@@ -973,7 +973,7 @@
 
 .postShow .postShow-title {
   padding: 0.75rem 1rem 0.7rem 1rem;
-  background-color: #FFA919;
+  background-color: #FF9D1F;
   border-radius: 0.5rem;
   font-family: Averta-ExtraBold;
   font-size: 1.5rem;
@@ -994,7 +994,7 @@
 
 .postShow-reaction .postShow-reactionDescription {
   width: 20rem;
-  color: #FFA919;
+  color: #FF9D1F;
   font-size: 1.8rem;
 }
 .postShow-reaction .postShow-reactionIcon {
@@ -1024,7 +1024,7 @@
 }
 .postShow-credits .postShow-author .postShow-title {
   margin: -2rem 0rem 0rem 0rem;
-  color: #FFA919;
+  color: #FF9D1F;
   font-size: 1.3rem;
 }
 .postShow-credits .postShow-author .postShow-name {
@@ -1047,7 +1047,7 @@
   margin: -2rem 0rem 0rem 0rem;
 }
 .postShow-credits .postShow-fontDate .postShow-fontContainer .postShow-fontTitle {
-  color: #FFA919;
+  color: #FF9D1F;
   font-size: 1.3rem;
 }
 .postShow-credits .postShow-fontDate .postShow-fontContainer .postShow-font {
@@ -1069,7 +1069,7 @@
 }
 .postShow-credits .postShow-fontDate .postShow-dateContainer .postShow-dateTitle {
   margin: 0.2rem 0rem 0rem 0rem;
-  color: #FFA919;
+  color: #FF9D1F;
   font-size: 1.3rem;
 }
 .postShow-credits .postShow-fontDate .postShow-dateContainer .postShow-date {
@@ -1124,7 +1124,7 @@
   }
 }
 .category .category-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -1132,7 +1132,7 @@
   width: 61rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -1165,7 +1165,7 @@
   }
 }
 .calendar-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -1173,7 +1173,7 @@
   width: 54rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -1205,7 +1205,7 @@
   color: #FFF6E6;
 }
 .calendar .calendar-table tbody tr td:nth-child(1) {
-  background-color: #FFA919;
+  background-color: #FF9D1F;
   color: #000000;
 }
 @media (max-width: 768px) {
@@ -1226,7 +1226,7 @@
   }
 }
 .akibacast .akibacast-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -1234,7 +1234,7 @@
   width: 61.9rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -1250,7 +1250,7 @@
 .akibacast .akibacast-container .akibacast-article {
   width: 17rem;
   height: 21.3rem;
-  background-color: #FFA919;
+  background-color: #FF9D1F;
   border-radius: 2rem 2rem 0rem 0rem;
   cursor: pointer;
 }
@@ -1284,7 +1284,7 @@
   }
 }
 .akibacastList-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -1292,7 +1292,7 @@
   width: 61.9rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -1321,7 +1321,7 @@
 .akibacastList-container .akibacastList-article .akibacastList-season {
   margin: 0rem 0rem 0rem 11rem;
   font-family: Averta-ExtraBold;
-  color: #FFA919;
+  color: #FF9D1F;
   font-size: 2rem;
 }
 .akibacastList-container .akibacastList-article .akibacastList-title {
@@ -1331,7 +1331,7 @@
   -webkit-line-clamp: 2;
   overflow: hidden;
   font-family: Averta-ExtraBold;
-  color: #FFA919;
+  color: #FF9D1F;
   font-size: 1.5rem;
 }
 .akibacastList-container .akibacastList-article .akibacastList-thumb {
@@ -1370,7 +1370,7 @@
   }
 }
 .partner .partner-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -1378,7 +1378,7 @@
   width: 62.5rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -1404,7 +1404,7 @@
   }
 }
 .schedule-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -1412,7 +1412,7 @@
   width: 52.9rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -1493,7 +1493,7 @@
   }
 }
 .playlistsBattle .playlistsBattle-container .playlistsBattle-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -1501,7 +1501,7 @@
   width: 55.7rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -1522,7 +1522,7 @@
   }
 }
 .rankingOne .rankingOne-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -1530,7 +1530,7 @@
   width: 53.4rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -1549,7 +1549,7 @@
 .rankingOne .rankingOne-container .rankingOne-content {
   width: 27rem;
   height: 7rem;
-  background-color: #FFA919;
+  background-color: #FF9D1F;
   border-radius: 0.5rem;
   margin: 3rem 0rem 0rem 0rem;
 }
@@ -1616,7 +1616,7 @@
 }
 .rankingTwo-table tbody tr td:nth-child(2) h6 {
   font-family: Averta-ExtraBold;
-  color: #FFA919 !important;
+  color: #FF9D1F !important;
   font-size: 1.3rem;
 }
 .rankingTwo-table tbody tr td:nth-child(2) div {
@@ -1662,7 +1662,7 @@
   }
 }
 .listenerMonth .listenerMonth-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -1670,7 +1670,7 @@
   width: 59.1rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -1721,7 +1721,7 @@
   }
 }
 .about .about-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -1729,7 +1729,7 @@
   width: 57.1rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -1766,7 +1766,7 @@
   }
 }
 .office .office-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -1774,7 +1774,7 @@
   width: 60.8rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -1807,7 +1807,7 @@
   }
 }
 .team-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -1815,7 +1815,7 @@
   width: 52.9rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -1833,7 +1833,7 @@
   width: 100%;
   list-style: none;
   cursor: pointer;
-  background-color: #FFA919;
+  background-color: #FF9D1F;
   border-radius: 0.3rem;
   padding: 0rem 0rem 0rem 0.5rem;
   margin: 0rem 0rem 0.5rem 0rem;
@@ -1852,7 +1852,7 @@
   font-size: 2.5rem;
 }
 .team-profile .team-identifier .team-name {
-  color: #FFA919;
+  color: #FF9D1F;
 }
 .team-profile .team-container {
   width: 100%;
@@ -1897,7 +1897,7 @@
   color: #FFF6E6;
 }
 .team-profile .team-like h6, .team-profile .team-deslike h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.2rem;
 }
@@ -1919,7 +1919,7 @@
   }
 }
 .survey .survey-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -1927,7 +1927,7 @@
   width: 63rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -1978,7 +1978,7 @@
   }
 }
 .events .events-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -1986,7 +1986,7 @@
   width: 48.8rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -2013,7 +2013,7 @@
   width: 100%;
   border-radius: 0.3rem;
   padding: 0.1rem 0rem 0.1rem 0rem;
-  background-color: #FFA919;
+  background-color: #FF9D1F;
   text-align: center;
   font-family: Averta-ExtraBold;
   color: #FFF6E6;
@@ -2038,7 +2038,7 @@
   }
 }
 .youtube-videos .youtube-videosTitle h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -2046,7 +2046,7 @@
   width: 56.1rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -2083,7 +2083,7 @@
   }
 }
 .streamingVideo .streamingVideo-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -2091,7 +2091,7 @@
   width: 49.7rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -2115,13 +2115,13 @@
 }
 .guidelines div button {
   border-radius: 0.5rem;
-  background-color: #FFA919;
+  background-color: #FF9D1F;
   color: #FFF6E6;
   font-family: Averta-ExtraBold;
 }
 .guidelines div button:hover {
   border-radius: 0.5rem;
-  background-color: #FFA919;
+  background-color: #FF9D1F;
   color: #FFF6E6;
   font-family: Averta-ExtraBold;
 }
@@ -2133,7 +2133,7 @@
   }
 }
 .recruitment-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -2141,7 +2141,7 @@
   width: 50rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -2166,14 +2166,14 @@
 }
 .recruitment-form div button {
   border-radius: 0.5rem;
-  border: 0.15rem solid #FFA919;
-  color: #FFA919;
+  border: 0.15rem solid #FF9D1F;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
 }
 .recruitment-form div button:hover {
   border-radius: 0.5rem;
-  border: 0.15rem solid #FFA919;
-  color: #FFA919;
+  border: 0.15rem solid #FF9D1F;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
 }
 
@@ -2203,7 +2203,7 @@
   }
 }
 .advertise-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -2211,7 +2211,7 @@
   width: 59.5rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -2236,14 +2236,14 @@
 }
 .advertise-form div button {
   border-radius: 0.5rem;
-  border: 0.15rem solid #FFA919;
-  color: #FFA919;
+  border: 0.15rem solid #FF9D1F;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
 }
 .advertise-form div button:hover {
   border-radius: 0.5rem;
-  border: 0.15rem solid #FFA919;
-  color: #FFA919;
+  border: 0.15rem solid #FF9D1F;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
 }
 
@@ -2254,7 +2254,7 @@
   }
 }
 .partner-title h6 {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -2262,7 +2262,7 @@
   width: 59.5rem;
   content: "";
   position: absolute;
-  border-bottom: 0.1rem solid #FFA919;
+  border-bottom: 0.1rem solid #FF9D1F;
   margin: 0.67rem 0rem 0rem 0.5rem;
 }
 @media (max-width: 992px) {
@@ -2287,19 +2287,19 @@
 }
 .partner-form div button {
   border-radius: 0.5rem;
-  border: 0.15rem solid #FFA919;
-  color: #FFA919;
+  border: 0.15rem solid #FF9D1F;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
 }
 .partner-form div button:hover {
   border-radius: 0.5rem;
-  border: 0.15rem solid #FFA919;
-  color: #FFA919;
+  border: 0.15rem solid #FF9D1F;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
 }
 
 .tag .tag-title {
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
   font-size: 1.3rem;
 }
@@ -2320,7 +2320,7 @@
 
 .recommend .recommend-title {
   font-size: 1.5rem;
-  color: #FFA919;
+  color: #FF9D1F;
   font-family: Averta-ExtraBold;
 }
 .recommend .recommend-article .recommend-title {

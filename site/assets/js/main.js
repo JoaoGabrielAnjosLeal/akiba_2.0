@@ -1,9 +1,17 @@
-$('body').attr('style', 'blue');
 //********** NAVBAR **********
 $('.nav-toggle, .nav-listClose').click(function(){
     $('.nav-list').animate({'width': 'toggle'}, 500);
 });
 
+if(window.screen.width < '992'){
+    $('.nav-list').animate({'width': 'toggle'}, 500);
+}
+
+$(window).on('resize', function(){
+    if(window.screen.width < '992'){
+        $('.nav-list').animate({'width': 'toggle'}, 500);
+    };
+});
 //********** SELETOR DE TEMAS **********
 $('.nav-theme').click(function(){
     $('.nav-themeSelector').animate({'width': 'toggle'}, 500);
@@ -248,6 +256,9 @@ $('.volume').click(function(){
 $('.volume-range').eq(0).on('change', function(){
     audio.volume = $('.volume-range').eq(0).val();
 });
+$('.volume-range').eq(0).click(function(){
+    setTimeout(function(){ $('.volume-box').fadeOut(); }, 5*1000); 
+})
 $('.volume-range').eq(1).on('change', function(){
     audio.volume = $('.volume-range').eq(1).val();
 });

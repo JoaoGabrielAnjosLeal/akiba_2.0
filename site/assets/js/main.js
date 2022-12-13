@@ -4,16 +4,17 @@ $('.nav-toggle, .nav-listClose').click(function(){
 });
 
 if(window.screen.width < '992'){
-    $('.nav-list').animate({'width': 'toggle'}, 500);
+    $('.nav-item').click(function(){
+        $('.nav-list').animate({'width': 'toggle'}, 500);
+    });
 }
 
-$(window).on('resize', function(){
-    if(window.screen.width < '992'){
-        $('.nav-list').animate({'width': 'toggle'}, 500);
-    };
-});
 //********** SELETOR DE TEMAS **********
 $('.nav-theme').click(function(){
+    $('.nav-themeSelector').animate({'width': 'toggle'}, 500);
+});
+
+$('.nav-themeItem').click(function(){
     $('.nav-themeSelector').animate({'width': 'toggle'}, 500);
 });
 

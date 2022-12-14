@@ -14,6 +14,7 @@ RewriteRule ^podcasts/?$ site/index.php
 RewriteRule ^equipe/?$ site/index.php
 RewriteRule ^midias/?$ site/index.php
 RewriteRule ^review/?$ site/index.php
+RewriteRule ^podcast/?$ site/index.php
 
 ## (ROTEAMENTO) PAGINA DE TAG ##
 RewriteRule ^tag/noticias/?$ site/index.php

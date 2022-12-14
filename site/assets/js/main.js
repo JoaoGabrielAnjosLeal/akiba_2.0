@@ -1,3 +1,16 @@
+if ("serviceWorker" in navigator) {
+    if (navigator.serviceWorker.controller) {
+        console.log("[AKIBA PWA] ServiceWorker encontrado e ativo, não há necessidade de registrar e ativar um novo");
+    } else {
+        navigator.serviceWorker
+            .register("./akiba_2.0/sw.js", {
+                scope: "/"
+            })
+            .then(function(reg) {
+                console.log("[AKIBA PWA] ServiceWorder foi regristado e esta ativado! " + reg.scope);
+            });
+    }
+}
 //********** NAVBAR **********
 $('.nav-toggle, .nav-listClose').click(function(){
     $('.nav-list').animate({'width': 'toggle'}, 500);
@@ -7,18 +20,6 @@ if(window.screen.width < '992'){
     $('.nav-item').click(function(){
         $('.nav-list').animate({'width': 'toggle'}, 500);
     });
-}
-/**************** PWA *****************/
-if ("serviceWorker" in navigator) {
-    if (navigator.serviceWorker.controller) {
-        console.log("[Akiba PWA] Um service worker ativado foi encontrado, não há necessidade de registrar um novo");
-    } else {
-    navigator.serviceWorker
-        .register("sw.js")
-        .then(function(reg) {
-            console.log("[Akiba PWA] O service worker ativado foi registrado para o escopo: " + reg.scope);
-        });
-    }
 }
 
 //********** SELETOR DE TEMAS **********
@@ -190,9 +191,12 @@ $('.requestMusic-btn').click(function(){
     });
 });
 
-$('.requestMusic-close').click(function(){
-    $('.requestMusic-modal').fadeOut();
-})
+$('.requestMusic-modal').click(function(e){
+    const requestMusic_modal = document.querySelector('.requestMusic-modal');
+    if(e.target == requestMusic_modal){
+        $('.requestMusic-modal').fadeOut();
+    }
+});
 
 //********** PLAYER **********
 setInterval(function(){
@@ -266,12 +270,15 @@ $('.pause').click(function(){
 $('.volume').click(function(){
     $('.volume-box').fadeToggle();
 })
+
+$('.volume-range').eq(0).click(function(){
+    setTimeout(function(){ $('.volume-box').fadeToggle(); }, 5*1000); 
+})
+
 $('.volume-range').eq(0).on('change', function(){
     audio.volume = $('.volume-range').eq(0).val();
 });
-$('.volume-range').eq(0).click(function(){
-    setTimeout(function(){ $('.volume-box').fadeOut(); }, 5*1000); 
-})
+
 $('.volume-range').eq(1).on('change', function(){
     audio.volume = $('.volume-range').eq(1).val();
 });
@@ -324,6 +331,9 @@ function router(){
         case 'review':
             $('main').load(`http://localhost/akiba_2.0/site/page/review.php/${urlParameter01}/${urlParameter02}/${urlParameter03}`);
         break;
+        case 'podcast':
+            $('main').load(`http://localhost/akiba_2.0/site/page/podcast.php/${urlParameter01}/${urlParameter02}/${urlParameter03}`);
+        break;
         default: 
             $('main').load(`http://localhost/akiba_2.0/site/page/404.php`);
         break;
@@ -360,6 +370,9 @@ function router(){
             break;
             case 'review':
                 $('main').load(`http://localhost/akiba_2.0/site/page/review.php/${urlParameter01}/${urlParameter02}/${urlParameter03}`);
+            break;
+            case 'podcast':
+                $('main').load(`http://localhost/akiba_2.0/site/page/podcast.php/${urlParameter01}/${urlParameter02}/${urlParameter03}`);
             break;
             default: 
                 $('main').load(`http://localhost/akiba_2.0/site/page/404.php`);

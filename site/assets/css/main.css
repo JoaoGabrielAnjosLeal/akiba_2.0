@@ -173,7 +173,7 @@
   width: 2rem;
   height: 2rem;
   margin: 0.4rem 1rem 0rem 0rem;
-  background-color: #000036;
+  background-color: #050506;
 }
 .header .nav .nav-brand .nav-theme .nav-themeIcon {
   width: 100%;
@@ -181,7 +181,7 @@
   filter: invert(75%) sepia(27%) saturate(3640%) hue-rotate(345deg) brightness(103%) contrast(101%);
 }
 .header .nav .nav-brand .nav-theme:hover {
-  background-color: #000036;
+  background-color: #050506;
 }
 @media (max-width: 992px) {
   .header .nav .nav-brand .nav-theme {
@@ -339,10 +339,6 @@
 }
 .requestMusic-modal .requestMusic-body .requestMusic-head {
   height: 4.5rem;
-}
-.requestMusic-modal .requestMusic-body .requestMusic-head button {
-  color: #FFF6E6;
-  font-size: 1.3rem;
 }
 .requestMusic-modal .requestMusic-body .requestMusic-content .requestMusic-form div label {
   font-family: Averta-ExtraBold;
@@ -1034,9 +1030,19 @@
   color: #FFF6E6;
   font-size: 1.5rem;
 }
+@media (min-width: 1400px) {
+  .postShow-credits .postShow-author .postShow-name {
+    width: 20rem;
+  }
+}
 .postShow-credits .postShow-author .postShow-authorAvatar {
   width: 8rem;
   margin: -5.95rem 0rem 0rem 0rem;
+}
+@media (min-width: 1400px) {
+  .postShow-credits .postShow-author {
+    width: 30rem;
+  }
 }
 @media (max-width: 992px) {
   .postShow-credits .postShow-author {
@@ -1059,6 +1065,11 @@
   font-family: Averta-ExtraBold;
   color: #FFF6E6;
 }
+@media (min-width: 1400px) {
+  .postShow-credits .postShow-fontDate .postShow-fontContainer .postShow-font {
+    width: 29rem;
+  }
+}
 @media (max-width: 992px) {
   .postShow-credits .postShow-fontDate .postShow-fontContainer .postShow-font {
     width: 100%;
@@ -1079,6 +1090,11 @@
   font-family: Averta-ExtraBold;
   color: #FFF6E6;
   font-size: 1.5rem;
+}
+@media (min-width: 1400px) {
+  .postShow-credits .postShow-fontDate .postShow-dateContainer .postShow-date {
+    width: 45%;
+  }
 }
 @media (max-width: 992px) {
   .postShow-credits .postShow-fontDate .postShow-dateContainer .postShow-date {
@@ -1101,8 +1117,8 @@
   font-size: 1.2rem;
 }
 .postShow-review .postShow-reviewDetails {
-  background-color: #0076fe;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
+  background-color: #00061a;
 }
 .postShow-review .postShow-reviewDetails summary {
   font-family: Averta-ExtraBold;
@@ -1113,8 +1129,52 @@
 .postShow-review .postShow-reviewDetails summary::-webkit-details-marker {
   display: none;
 }
-.postShow-review .postShow-reviewDetails p {
+.postShow-review .postShow-reviewDetails div {
   color: #FFF6E6;
+}
+.postShow-review .postShow-reviewDetails div p {
+  color: #FFF6E6;
+}
+
+.tag .tag-title {
+  color: #FF9D1F;
+  font-family: Averta-ExtraBold;
+  font-size: 1.3rem;
+}
+.tag .tag-container {
+  border-radius: 0.5rem;
+  background-color: #0076fe;
+  padding: 0.8rem;
+}
+.tag .tag-container .tag-name {
+  color: #FFF6E6;
+  font-size: 1.3rem;
+  font-family: Averta-ExtraBold;
+}
+.tag .tag-container .tag-description {
+  font-size: 0.9rem;
+  color: #FFF6E6;
+}
+
+.recommend .recommend-title {
+  font-size: 1.5rem;
+  color: #FF9D1F;
+  font-family: Averta-ExtraBold;
+}
+.recommend .recommend-article .recommend-title {
+  font-family: Averta-Regular;
+  font-size: 0.9rem;
+  color: #FFF6E6;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+.recommend .recommend-article .recommend-thumb {
+  width: 8rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
 }
 
 @media (max-width: 1200px) {
@@ -1361,6 +1421,38 @@
   .akibacastList-container .akibacastList-article {
     cursor: initial;
   }
+}
+
+.akibacastShow .akibacastShow-title {
+  padding: 0.38rem 1rem 0.5rem 1rem;
+  background-color: #FF9D1F;
+  border-radius: 0.5rem;
+}
+.akibacastShow .akibacastShow-title h5 {
+  color: #FFF6E6;
+  font-size: 2rem;
+  font-family: Averta-ExtraBold;
+}
+.akibacastShow .akibacastShow-title h6 {
+  color: #FFF6E6;
+  font-size: 1.5rem;
+  font-family: Averta-ExtraBold;
+}
+.akibacastShow .akibacastShow-text {
+  color: #FFF6E6;
+}
+.akibacastShow .akibacastShow-text p {
+  color: #FFF6E6;
+}
+.akibacastShow .akibacastShow-agregator h6 {
+  margin: 0.1rem 0rem 0rem 0rem;
+  color: #FFF6E6;
+  font-family: Averta-ExtraBold;
+  font-size: 1.3rem;
+}
+.akibacastShow .akibacastShow-agregator a img {
+  width: 2rem;
+  filter: invert(95%) sepia(3%) saturate(2035%) hue-rotate(20deg) brightness(112%) contrast(108%);
 }
 
 @media (max-width: 1200px) {
@@ -2296,47 +2388,6 @@
   border: 0.15rem solid #FF9D1F;
   color: #FF9D1F;
   font-family: Averta-ExtraBold;
-}
-
-.tag .tag-title {
-  color: #FF9D1F;
-  font-family: Averta-ExtraBold;
-  font-size: 1.3rem;
-}
-.tag .tag-container {
-  border-radius: 0.5rem;
-  background-color: #0076fe;
-  padding: 0.8rem;
-}
-.tag .tag-container .tag-name {
-  color: #FFF6E6;
-  font-size: 1.3rem;
-  font-family: Averta-ExtraBold;
-}
-.tag .tag-container .tag-description {
-  font-size: 0.9rem;
-  color: #FFF6E6;
-}
-
-.recommend .recommend-title {
-  font-size: 1.5rem;
-  color: #FF9D1F;
-  font-family: Averta-ExtraBold;
-}
-.recommend .recommend-article .recommend-title {
-  font-family: Averta-Regular;
-  font-size: 0.9rem;
-  color: #FFF6E6;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  overflow: hidden;
-}
-.recommend .recommend-article .recommend-thumb {
-  width: 8rem;
-  height: 5rem;
-  border-radius: 0.5rem;
-  object-fit: cover;
 }
 
 /*# sourceMappingURL=main.css.map */

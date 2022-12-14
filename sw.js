@@ -1,10 +1,8 @@
-var cacheName = 'akiba-v';
+var cacheName = 'NomeApp-v';
 var filesToCache = [
-    '/rede_akiba_2.0',
-    '/rede_akiba_2.0/site/assets/css/main.css',
-    '/rede_akiba_2.0/site/assets/js/main.js',
-    '/rede_akiba_2.0/site/assets/js/page.js',
-    '/rede_akiba_2.0/site/assets/js/router.js'
+  '/rede_akiba_2.0',
+  '/rede_akiba_2.0/site/assets/css/main.css',
+  '/rede_akiba_2.0/site/assets/js/main.js'
 ];
 self.addEventListener('install', function(e) {
   e.waitUntil(

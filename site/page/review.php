@@ -1,7 +1,7 @@
 <!---------------------------------JAVASCRIPT PRÓPRIO DA PÁGINA--------------------------------->
 <script async defer>
     //Altera o titulo da página no navegador
-    $('title').text('Rede Akiba | Nome do post');
+    $('title').text('Rede Akiba | Nome do review');
 
     //Comportamento dos players na página
     $('.player-top').hide();
@@ -15,24 +15,27 @@
         case 'light-theme':
             $('.body').css({'background': '#e6e6e6'});
 
-            $('.postShow-text, .postShow-text > p, .recommend-article > h6').css({'color': '#000000'});
-            $('.postShow-title, .postShow-name, .postShow-font, .postShow-date, .tag-name, .tag-description').css({'color': '#ffbd7'});
+            $('.postShow-text, .postShow-text > p, .recommend-article > h6, .postShow-reviewTitle, .postShow-reviewDetails > summary, .postShow-reviewDetails > div, .postShow-reviewDetails > div > p').css({'color': '#000000'});
+            $('.postShow-title, .postShow-name, .tag-name, .tag-description').css({'color': '#ffbd7'});
+            $('.postShow-reviewDetails').css({'background-color': '#f8f8f8'});
         break;
         case 'dark-theme':
             $('.body').css({'background': '#1a1a1a'});
 
-            $('.postShow-text, .postShow-text > p, .recommend-article > h6').css({'color': '#ffbd7'});
-            $('.postShow-title, .postShow-name, .postShow-font, .postShow-date, .tag-name, .tag-description').css({'color': '#ffbd7'});
+            $('.postShow-text, .postShow-text > p, .recommend-article > h6, .postShow-reviewTitle, .postShow-reviewDetails > summary, .postShow-reviewDetails > div, .postShow-reviewDetails > div > p').css({'color': '#ffbd7'});
+            $('.postShow-title, .postShow-name, .tag-name, .tag-description').css({'color': '#ffbd7'});
+            $('.postShow-reviewDetails').css({'background-color': '#050505'});
         break;
         default:
             $('.body').css({'background': '#0e1139'});
 
-            $('.postShow-text, .postShow-text > p, .recommend-article > h6').css({'color': ''});
-            $('.postShow-title, .postShow-name, .postShow-font, .postShow-date, .tag-name, .tag-description').css({'color': ''});
+            $('.postShow-text, .postShow-text > p, .recommend-article > h6, .postShow-reviewTitle, .postShow-reviewDetails > summary, .postShow-reviewDetails > div, .postShow-reviewDetails > div > p').css({'color': ''});
+            $('.postShow-title, .postShow-name, .tag-name, .tag-description').css({'color': ''});
+            $('.postShow-reviewDetails').css({'background-color': ''});
         break;
      }
 
-    //Verifica se a url está preenchida para apontar para alguma postagem
+    //Verifica se a url está preenchida para apontar para algum review
     var url = window.location.href
     var split = url.split('/')
     var point_review = split[5]
@@ -60,15 +63,15 @@
                     <h6 class="postShow-reviewTitle text-uppercase text-center mb-3">Veja a review de cada membro da equipe que assistiu esse anime:</h6>
                     <details class="postShow-reviewDetails p-2 mb-2">
                         <summary class="text-uppercase"><i class="bi bi-plus"></i>&nbsp;Neko Kirame</summary>
-                        <p class="mt-2">
+                        <div class="mt-2">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et velit maximus, fermentum nisi accumsan, tincidunt lacus. In lobortis odio vel nunc scelerisque pellentesque. Maecenas eu tristique nisi. Mauris vel tellus dui. Suspendisse potenti. Donec non ante vitae dolor gravida mollis quis molestie purus. Vivamus laoreet, nunc in gravida ullamcorper, massa leo accumsan ipsum, et facilisis elit justo maximus erat. Sed consectetur ipsum et aliquam dictum.
-                        </p>
+                        </div>
                     </details>
                     <details class="postShow-reviewDetails p-2 mb-2">
                         <summary class="text-uppercase"><i class="bi bi-plus"></i>&nbsp;Neko Kirame</summary>
-                        <p class="mt-2">
+                        <div class="mt-2">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et velit maximus, fermentum nisi accumsan, tincidunt lacus. In lobortis odio vel nunc scelerisque pellentesque. Maecenas eu tristique nisi. Mauris vel tellus dui. Suspendisse potenti. Donec non ante vitae dolor gravida mollis quis molestie purus. Vivamus laoreet, nunc in gravida ullamcorper, massa leo accumsan ipsum, et facilisis elit justo maximus erat. Sed consectetur ipsum et aliquam dictum.
-                        </p>
+                        </div>
                     </details>
                 </div>
             </article>
@@ -80,7 +83,7 @@
                 <img class="postShow-reactionIcon" src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/svg/humor/MEIA_BOCA.svg" loading="lazy" alt="Meia Boca" title="Meia Boca">
                 <img class="postShow-reactionIcon" src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/svg/humor/BEM_RUIM.svg" loading="lazy" alt="Bem Ruim" title="Bem Ruim">
             </section>
-            <section class="postShow-comments mt-4">
+            <section class="postShow-comments mt-4 mb-4">
                 <div id="disqus_thread" class="mt-4"></div>
                 <script async defer>
                     /**

@@ -15,11 +15,11 @@
     <title>Rede Akiba - O Paraíso dos Otakus! | Sua Melhor Fonte de Animes (e Mangás) no Brasil!</title>
     <link rel="shortcut icon" href="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/img/favicon.ico" type="image/x-icon">
     <!--preloads-->
-    <link rel="preload" href="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/css/main.css" as="style">
+    <link rel="preload" href="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/css/main.min.css" as="style">
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" as="style">
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" as="style">
     <!--css--> 
-    <link rel="stylesheet" href="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/css/main.css">
+    <link rel="stylesheet" href="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/css/main.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="manifest" href="manifest.json">
@@ -88,7 +88,7 @@
             </div>
             <div class="mb-2">
                 <label for="localização" class="form-label text-uppercase"><i class="bi bi-geo-alt-fill"></i>&nbsp;Cidade e Estado</label>
-                <input type="text" class="form-control shadow-none" id="localização" aria-label="Cidade e Estado" placeholder="Rio de Janeiro - RJ" required>
+                <input type="text" class="form-control shadow-none" id="localização" aria-label="Cidade e estado" placeholder="Rio de Janeiro - RJ" required>
                 <div class="form-text">Você mora onde? Fora do Brasil? Diga a cidade e o país!</div>
             </div>
             <div class="mb-2">
@@ -98,10 +98,10 @@
             </div>
             <div class="mb-3">
                 <label for="mensagem" class="form-label text-uppercase"><i class="bi bi-envelope-heart-fill"></i>&nbsp;Mandar recadinho</label>
-                <textarea class="form-control shadow-none" id="mensagem" rows="4" aria-label="mandar recadinho" placeholder="Estou adorando seu programa, vou vim sempre acompanhar!"></textarea>
+                <textarea class="form-control shadow-none" id="mensagem" rows="4" aria-label="Mandar recadinho" placeholder="Estou adorando seu programa, vou vim sempre acompanhar!"></textarea>
                 <div class="form-text">Não é obrigatório mas seria legal mandar um recadinho.</div>
             </div>
-            <button type="submit" class="btn w-100 text-uppercase border-0" aria-label="enviar"><i class="bi bi-send-fill"></i>&nbsp;Enviar meu pedido</button>
+            <button type="submit" class="btn w-100 text-uppercase border-0" aria-label="Enviar"><i class="bi bi-send-fill"></i>&nbsp;Enviar meu pedido</button>
         </form>
         </div>
     </div>
@@ -216,6 +216,6 @@
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-<script src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/js/main.js"></script>
+<script src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/js/main.min.js"></script>
 </body>
 </html>

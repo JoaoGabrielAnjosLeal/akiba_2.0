@@ -9,10 +9,11 @@
     $('.player-footer').show();
     $('.footer').css({'margin': '0rem 0rem 4rem 0rem'}).show();
 
+    //Caixa de Comentários
     $('#disqus_thread').show();
 
-     //Tema da página
-     switch(Cookies.get('akiba-theme')){
+    //Tema da página
+    switch(Cookies.get('akiba-theme')){
         case 'light-theme':
             $('.body').css({'background': '#e6e6e6'});
 
@@ -34,7 +35,7 @@
             $('.akibacastShow-title > h5, .akibacastShow-title > h6').css({'color': ''});
             $('.akibacastShow-agregator > a > img').css({'filter': ''});
         break;
-     }
+    }
 
     //Verifica se a url está preenchida para apontar para algum episódio
     var url = window.location.href
@@ -62,10 +63,10 @@
                 <iframe class="mt-3" style="border-radius:12px" src="https://open.spotify.com/embed/episode/0E5cy0x9LlqZ2jRsLnG1Re?utm_source=generator&t=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 <div class="akibacastShow-agregator d-flex gap-3 flex-wrap mt-3">
                     <h6 class="text-uppercase">Ouça esse akibacast em outros agregadores >></h6>
-                    <a href="" target="_blank" title="Acessar no Google Podcasts"><img src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/svg/podcast/google-podcasts.svg" alt="Google Podcasts" loading="lazy"></a>
-                    <a href="" target="_blank" title="Acessar no Apple Podcasts"><img src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/svg/podcast/apple-podcasts.svg" alt="Apple Podcasts" loading="lazy"></a>
-                    <a href="" target="_blank" title="Acessar no Tune In"><img src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/svg/podcast/tune-in.svg" alt="Tune In" loading="lazy"></a>
-                    <a href="" target="_blank" title="Acessar no Dezzer"><img src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/svg/podcast/google-podcasts.svg" alt="Dezzer" loading="lazy"></a>
+                    <a href="" target="_blank" title="Acessar no Google Podcasts"><img src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/svg/podcast/google-podcasts.svg" alt="Icone da Google Podcasts" loading="lazy"></a>
+                    <a href="" target="_blank" title="Acessar no Apple Podcasts"><img src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/svg/podcast/apple-podcasts.svg" alt="Icone da Apple Podcasts" loading="lazy"></a>
+                    <a href="" target="_blank" title="Acessar no Tune In"><img src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/svg/podcast/tune-in.svg" alt="Icone do Tune In" loading="lazy"></a>
+                    <a href="" target="_blank" title="Acessar no Dezzer"><img src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/svg/podcast/google-podcasts.svg" alt="Icone do Dezzer" loading="lazy"></a>
                 </div>
                 <div id="disqus_thread" class="mt-3 mb-4"></div>
                 <script async defer>

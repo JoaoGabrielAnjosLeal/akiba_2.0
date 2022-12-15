@@ -361,7 +361,7 @@
                         </div>
                     </div>
                     <p class="listenerMonth-information">
-                        
+                        Conteúdo do ouvinte do mês
                     </p>
                     <img class="listenerMonth-avatar float-end" src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/img/ex_avatar.webp" loading="lazy" alt="Avatar do ranking">
                 </div>

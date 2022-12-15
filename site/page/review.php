@@ -8,10 +8,11 @@
     $('.player-footer').show();
     $('.footer').css({'margin': '0rem 0rem 4rem 0rem'}).show();
 
+    //Caixa de Comentários
     $('#disqus_thread').show();
     
-     //Tema da página
-     switch(Cookies.get('akiba-theme')){
+    //Tema da página
+    switch(Cookies.get('akiba-theme')){
         case 'light-theme':
             $('.body').css({'background': '#e6e6e6'});
 
@@ -33,7 +34,7 @@
             $('.postShow-title, .postShow-name, .tag-name, .tag-description').css({'color': ''});
             $('.postShow-reviewDetails').css({'background-color': ''});
         break;
-     }
+    }
 
     //Verifica se a url está preenchida para apontar para algum review
     var url = window.location.href

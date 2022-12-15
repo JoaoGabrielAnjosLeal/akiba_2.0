@@ -30,6 +30,8 @@ switch(Cookies.get('akiba-theme')){
 
         $('.highLight-title, .highlight-count, .review-title, .postList-count, .postList-creditsAuthor, .postList-creditsDate, .calendar-table > tbody > tr > td, .akibacast-title').css({'color':'#ffebd7'});
         $('.highLight-tagIcon').css({'filter': 'invert(88%) sepia(9%) saturate(801%) hue-rotate(329deg) brightness(106%) contrast(102%)'});
+
+        $('.postList-article').css({'border-bottom': ''});
     break;
     case 'dark-theme':
         if(window.screen.width < '992'){
@@ -83,7 +85,7 @@ switch(Cookies.get('akiba-theme')){
                     <h6 class="text-uppercase">Destaques da Akiba</h6>
                 </div>
                 <div class="highLight-container d-flex flex-wrap justify-content-center gap-2 mt-4">
-                    <article class="highLight-article position-relative">
+                    <article onclick="history.pushState('post','post','/akiba_2.0/animes'); router();" class="highLight-article position-relative">
                         <img class="highLight-avatar float-end" src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/img/ex_avatar.webp" loading="lazy" alt="Avatar do destaque">
                         <h6 class="highLight-title text-uppercase">Kanojo Okarishimasu – Figure sensual da Chizuru anima otakus e sei lá o que vamos fazer e isso ai é o que vamos fazer</h6>
                         <div class="highLight-tag">
@@ -92,7 +94,7 @@ switch(Cookies.get('akiba-theme')){
                         </div>
                         <div class="highLight-count position-absolute"><i class="bi bi-hand-thumbs-up-fill"></i>&nbsp;100%</div>
                     </article>
-                    <article class="highLight-article position-relative">
+                    <article onclick="history.pushState('post','post','/akiba_2.0/animes'); router();" class="highLight-article position-relative">
                         <img class="highLight-avatar float-end" src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/img/ex_avatar.webp" loading="lazy" alt="Avatar do destaque">
                         <h6 class="highLight-title text-uppercase">Kanojo Okarishimasu – Figure sensual da Chizuru anima otakus e sei lá o que vamos fazer e isso ai é o que vamos fazer</h6>
                         <div class="highLight-tag">
@@ -101,7 +103,7 @@ switch(Cookies.get('akiba-theme')){
                         </div>
                         <div class="highLight-count position-absolute"><i class="bi bi-hand-thumbs-up-fill"></i>&nbsp;100%</div>
                     </article>
-                    <article class="highLight-article position-relative">
+                    <article onclick="history.pushState('post','post','/akiba_2.0/animes'); router();" class="highLight-article position-relative">
                         <img class="highLight-avatar float-end" src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/img/ex_avatar.webp" loading="lazy" alt="Avatar do destaque">
                         <h6 class="highLight-title text-uppercase">Kanojo Okarishimasu – Figure sensual da Chizuru anima otakus e sei lá o que vamos fazer e isso ai é o que vamos fazer</h6>
                         <div class="highLight-tag">
@@ -128,23 +130,23 @@ switch(Cookies.get('akiba-theme')){
                     <h6 class="text-uppercase">Review's da Akiba</h6>
                 </div>
                 <div class="review-container d-flex flex-wrap gap-2 justify-content-center mt-3">
-                    <article class="review-article">
+                    <article onclick="history.pushState('review','review','/akiba_2.0/review'); router();" class="review-article">
                         <img class="review-thumb" src="https://img1.ak.crunchyroll.com/i/spire1/8f3cfc8beb6901457dbe7166a14ae2271661691153_main.png" loading="lazy" alt="Thumb do review">
                         <h6 class="review-title text-uppercase text-center w-100">Spy x Family</h6>
                     </article>
-                    <article class="review-article">
+                    <article onclick="history.pushState('review','review','/akiba_2.0/review'); router();" class="review-article">
                         <img class="review-thumb" src="https://img1.ak.crunchyroll.com/i/spire1/8f3cfc8beb6901457dbe7166a14ae2271661691153_main.png" loading="lazy" alt="Thumb do review">
                         <h6 class="review-title text-uppercase text-center w-100">Spy x Family</h6>
                     </article>
-                    <article class="review-article">
+                    <article onclick="history.pushState('review','review','/akiba_2.0/review'); router();" class="review-article">
                         <img class="review-thumb" src="https://img1.ak.crunchyroll.com/i/spire1/8f3cfc8beb6901457dbe7166a14ae2271661691153_main.png" loading="lazy" alt="Thumb do review">
                         <h6 class="review-title text-uppercase text-center w-100">Spy x Family</h6>
                     </article>
-                    <article class="review-article">
+                    <article onclick="history.pushState('review','review','/akiba_2.0/review'); router();" class="review-article">
                         <img class="review-thumb" src="https://img1.ak.crunchyroll.com/i/spire1/8f3cfc8beb6901457dbe7166a14ae2271661691153_main.png" loading="lazy" alt="Thumb do review">
                         <h6 class="review-title text-uppercase text-center w-100">Spy x Family</h6>
                     </article>
-                    <article class="review-article">
+                    <article onclick="history.pushState('review','review','/akiba_2.0/review'); router();" class="review-article">
                         <img class="review-thumb" src="https://img1.ak.crunchyroll.com/i/spire1/8f3cfc8beb6901457dbe7166a14ae2271661691153_main.png" loading="lazy" alt="Thumb do review">
                         <h6 class="review-title text-uppercase text-center w-100">Spy x Family</h6>
                     </article>
@@ -164,7 +166,7 @@ switch(Cookies.get('akiba-theme')){
     <div class="row mt-2 mb-4">
         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
             <section class="postList">
-                <article class="postList-article position-relative">
+                <article onclick="history.pushState('post','post','/akiba_2.0/animes'); router();" class="postList-article position-relative">
                     <img class="postList-thumb" src="https://img1.ak.crunchyroll.com/i/spire1/8f3cfc8beb6901457dbe7166a14ae2271661691153_main.png" loading="lazy" alt="Thumb da publicação">
                     <h6 class="postList-title text-uppercase">Doraemon: Filme Anime para 2023 adiciona Marina Inoue e Inori Minase ao elenco e é isso ai vamos lá ver o que é que tem pra ver</h6>
                     <div class="postList-count position-absolute"><i class="bi bi-hand-thumbs-up-fill"></i>&nbsp;100%</div>
@@ -177,7 +179,7 @@ switch(Cookies.get('akiba-theme')){
                         <h6 class="postList-creditsDate text-uppercase"><i class="bi bi-calendar-date-fill"></i>&nbsp;00/00/0000</h6>
                     </div>
                 </article>
-                <article class="postList-article position-relative">
+                <article onclick="history.pushState('post','post','/akiba_2.0/animes'); router();" class="postList-article position-relative">
                     <img class="postList-thumb" src="https://img1.ak.crunchyroll.com/i/spire1/8f3cfc8beb6901457dbe7166a14ae2271661691153_main.png" loading="lazy" alt="Thumb da publicação">
                     <h6 class="postList-title text-uppercase">Doraemon: Filme Anime para 2023 adiciona Marina Inoue e Inori Minase ao elenco e é isso ai vamos lá ver o que é que tem pra ver</h6>
                     <div class="postList-count position-absolute"><i class="bi bi-hand-thumbs-up-fill"></i>&nbsp;100%</div>
@@ -190,7 +192,7 @@ switch(Cookies.get('akiba-theme')){
                         <h6 class="postList-creditsDate text-uppercase"><i class="bi bi-calendar-date-fill"></i>&nbsp;00/00/0000</h6>
                     </div>
                 </article>
-                <article class="postList-article position-relative">
+                <article onclick="history.pushState('post','post','/akiba_2.0/animes'); router();" class="postList-article position-relative">
                     <img class="postList-thumb" src="https://img1.ak.crunchyroll.com/i/spire1/8f3cfc8beb6901457dbe7166a14ae2271661691153_main.png" loading="lazy" alt="Thumb da publicação">
                     <h6 class="postList-title text-uppercase">Doraemon: Filme Anime para 2023 adiciona Marina Inoue e Inori Minase ao elenco e é isso ai vamos lá ver o que é que tem pra ver</h6>
                     <div class="postList-count position-absolute"><i class="bi bi-hand-thumbs-up-fill"></i>&nbsp;100%</div>
@@ -203,7 +205,7 @@ switch(Cookies.get('akiba-theme')){
                         <h6 class="postList-creditsDate text-uppercase"><i class="bi bi-calendar-date-fill"></i>&nbsp;00/00/0000</h6>
                     </div>
                 </article>
-                <article class="postList-article position-relative">
+                <article onclick="history.pushState('post','post','/akiba_2.0/animes'); router();" class="postList-article position-relative">
                     <img class="postList-thumb" src="https://img1.ak.crunchyroll.com/i/spire1/8f3cfc8beb6901457dbe7166a14ae2271661691153_main.png" loading="lazy" alt="Thumb da publicação">
                     <h6 class="postList-title text-uppercase">Doraemon: Filme Anime para 2023 adiciona Marina Inoue e Inori Minase ao elenco e é isso ai vamos lá ver o que é que tem pra ver</h6>
                     <div class="postList-count position-absolute"><i class="bi bi-hand-thumbs-up-fill"></i>&nbsp;100%</div>
@@ -216,7 +218,7 @@ switch(Cookies.get('akiba-theme')){
                         <h6 class="postList-creditsDate text-uppercase"><i class="bi bi-calendar-date-fill"></i>&nbsp;00/00/0000</h6>
                     </div>
                 </article>
-                <article class="postList-article position-relative">
+                <article onclick="history.pushState('post','post','/akiba_2.0/animes'); router();" class="postList-article position-relative">
                     <img class="postList-thumb" src="https://img1.ak.crunchyroll.com/i/spire1/8f3cfc8beb6901457dbe7166a14ae2271661691153_main.png" loading="lazy" alt="Thumb da publicação">
                     <h6 class="postList-title text-uppercase">Doraemon: Filme Anime para 2023 adiciona Marina Inoue e Inori Minase ao elenco e é isso ai vamos lá ver o que é que tem pra ver</h6>
                     <div class="postList-count position-absolute"><i class="bi bi-hand-thumbs-up-fill"></i>&nbsp;100%</div>
@@ -276,27 +278,27 @@ switch(Cookies.get('akiba-theme')){
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr onclick="history.pushState('post','post','/akiba_2.0/eventos'); router();">
                             <td class="text-center text-uppercase">Evento da Akiba</td>
                             <td class="text-center text-uppercase">Evento da Akiba</td>
                             <td class="text-center text-uppercase">Evento da Akiba</td>
                         </tr>
-                        <tr>
+                        <tr onclick="history.pushState('post','post','/akiba_2.0/eventos'); router();">
                             <td class="text-center text-uppercase">Evento da Akiba</td>
                             <td class="text-center text-uppercase">Evento da Akiba</td>
                             <td class="text-center text-uppercase">Evento da Akiba</td>
                         </tr>
-                        <tr>
+                        <tr onclick="history.pushState('post','post','/akiba_2.0/eventos'); router();">
                             <td class="text-center text-uppercase">Evento da Akiba</td>
                             <td class="text-center text-uppercase">Evento da Akiba</td>
                             <td class="text-center text-uppercase">Evento da Akiba</td>
                         </tr>
-                        <tr>
+                        <tr onclick="history.pushState('post','post','/akiba_2.0/eventos'); router();">
                             <td class="text-center text-uppercase">Evento da Akiba</td>
                             <td class="text-center text-uppercase">Evento da Akiba</td>
                             <td class="text-center text-uppercase">Evento da Akiba</td>
                         </tr>
-                        <tr>
+                        <tr onclick="history.pushState('post','post','/akiba_2.0/eventos'); router();">
                             <td class="text-center text-uppercase">Evento da Akiba</td>
                             <td class="text-center text-uppercase">Evento da Akiba</td>
                             <td class="text-center text-uppercase">Evento da Akiba</td>
@@ -317,19 +319,19 @@ switch(Cookies.get('akiba-theme')){
                     <h6 class="text-uppercase">Akibacasts</h6>
                 </div>
                 <div class="akibacast-container d-flex gap-2 flex-wrap justify-content-center mt-3 mb-3">
-                    <article class="akibacast-article">
+                    <article onclick="history.pushState('podcast','podcast','/akiba_2.0/podcast'); router();" class="akibacast-article">
                         <img class="akibacast-thumb" src="https://akiba.com.br/painel/v1/imagens/podcast/1636768970.png" loading="lazy" alt="Thumb do Akibacast">
                         <h6 class="akibacast-title text-uppercase w-100">Titulo do akibacast boladão tipo alfeganistão vamos lá e é isso ai foda pra caralho</h6>
                     </article>
-                    <article class="akibacast-article">
+                    <article onclick="history.pushState('podcast','podcast','/akiba_2.0/podcast'); router();" class="akibacast-article">
                         <img class="akibacast-thumb" src="https://akiba.com.br/painel/v1/imagens/podcast/1636768970.png" loading="lazy" alt="Thumb do Akibacast">
                         <h6 class="akibacast-title text-uppercase  w-100">Titulo do akibacast boladão tipo alfeganistão vamos lá e é isso ai foda pra caralho</h6>
                     </article>
-                    <article class="akibacast-article">
+                    <article onclick="history.pushState('podcast','podcast','/akiba_2.0/podcast'); router();" class="akibacast-article">
                         <img class="akibacast-thumb" src="https://akiba.com.br/painel/v1/imagens/podcast/1636768970.png" loading="lazy" alt="Thumb do Akibacast">
                         <h6 class="akibacast-title text-uppercase  w-100">Titulo do akibacast boladão tipo alfeganistão vamos lá e é isso ai foda pra caralho</h6>
                     </article>
-                    <article class="akibacast-article">
+                    <article onclick="history.pushState('podcast','podcast','/akiba_2.0/podcast'); router();" class="akibacast-article">
                         <img class="akibacast-thumb" src="https://akiba.com.br/painel/v1/imagens/podcast/1636768970.png" loading="lazy" alt="Thumb do Akibacast">
                         <h6 class="akibacast-title text-uppercase  w-100">Titulo do akibacast boladão tipo alfeganistão vamos lá e é isso ai foda pra caralho</h6>
                     </article>

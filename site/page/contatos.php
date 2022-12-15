@@ -94,7 +94,7 @@
             <form class="recruitment-form">
                 <div class="mb-3">
                     <label for="cargo" class="form-label text-uppercase">Qual cargo você quer exercer?</label>
-                    <select class="form-control shadow-none border-0" id="cargo" aria-label="cargo">
+                    <select class="form-control shadow-none border-0" id="cargo" aria-label="Cargo">
                         <option selected>Selecione um cargo</option>
                         <option value="locutor">Locutor</option>
                         <option value="podcaster">Podcaster</option>
@@ -107,34 +107,34 @@
                 </div>
                 <div class="mb-3">
                     <label for="nome" class="form-label text-uppercase">Qual é seu nome completo?</label>
-                    <input type="text" class="form-control shadow-none border-0" id="nome" aria-label="nome completo" required>
+                    <input type="text" class="form-control shadow-none border-0" id="nome" aria-label="Nome completo" required>
                 </div>
                 <div class="mb-3">
                     <label for="apelido" class="form-label text-uppercase">Qual é seu apelido/nickname?</label>
-                    <input type="text" class="form-control shadow-none border-0" id="apelido" aria-label="apelido / nickname" required>
+                    <input type="text" class="form-control shadow-none border-0" id="apelido" aria-label="Apelido / nickname" required>
                 </div>
                 <div class="mb-3">
                     <label for="idade" class="form-label text-uppercase">Quando você nasceu?</label>
-                    <input type="date" class="form-control shadow-none border-0" id="idade" aria-label="data de nascimento" required>
+                    <input type="date" class="form-control shadow-none border-0" id="idade" aria-label="Data de nascimento" required>
                 </div>
                 <div class="mb-3">
                     <label for="trabalhos" class="form-label text-uppercase">Tem alguns trabalhos que a gente possa ver? Coloca os links ai pra gente!</label>
-                    <textarea class="form-control shadow-none border-0" id="trabalhos" rows="3" aria-label="seus trabalhos"></textarea>
+                    <textarea class="form-control shadow-none border-0" id="trabalhos" rows="3" aria-label="Trabalhos"></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="contato" class="form-label text-uppercase">Coloca um contato ai pra gente!</label>
-                    <input type="text" class="form-control shadow-none border-0" id="contato" aria-label="contato" required>
+                    <input type="text" class="form-control shadow-none border-0" id="contato" aria-label="Contato" required>
                 </div>
                 <div class="mb-3">
                     <label for="discord" class="form-label text-uppercase">Fala ai! Qual é o seu nick no Discord?</label>
-                    <input type="text" class="form-control shadow-none border-0" id="discord" aria-label="discord" required>
+                    <input type="text" class="form-control shadow-none border-0" id="discord" aria-label="Discord" required>
                 </div>
                 <div class="mb-3">
                     <label for="preentrevista" class="form-label text-uppercase">Hora da pré entrevista! Por quê você quer entrar na Akiba?</label>
-                    <textarea class="form-control shadow-none border-0" id="preentrevista" rows="5" aria-label="por quê quer entrar na equipe?" required></textarea>
+                    <textarea class="form-control shadow-none border-0" id="preentrevista" rows="5" aria-label="Motivo de ingresso na equipe" required></textarea>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn text-uppercase">Enviar minha inscrição</button>
+                    <button type="submit" class="btn text-uppercase" aria-label="Enviar">Enviar minha inscrição</button>
                 </div>
             </form>
         </div>
@@ -171,11 +171,11 @@
                 <form class="advertise-form">
                     <div class="mb-3">
                         <label for="empresa" class="form-label text-uppercase">Quem é você / sua empresa?</label>
-                        <input type="text" class="form-control shadow-none border-0" id="empresa" aria-label="Sua empresa ou seu nome">
+                        <input type="text" class="form-control shadow-none border-0" id="empresa" aria-label="Empresa ou nome">
                     </div>
                     <div class="mb-3">
                         <label for="formas" class="form-label text-uppercase">Como quer anunciar?</label>
-                        <select class="form-control shadow-none border-0" id="formas" aria-label="Formas de anuncio">
+                        <select class="form-control shadow-none border-0" id="formas" aria-label="Formas de anunciar">
                             <option selected>Selecione uma opção</option>
                             <option value="banners">Em banners dentro do site</option>
                             <option value="programacao">Nos intervalos gerais na programação da rádio</option>
@@ -184,10 +184,10 @@
                     </div>
                     <div class="mb-3">
                         <label for="tempo" class="form-label text-uppercase">Vai anunciar até o dia?</label>
-                        <input type="date" class="form-control shadow-none border-0" id="tempo" aria-label="Tempo de duração do anuncio">
+                        <input type="date" class="form-control shadow-none border-0" id="tempo" aria-label="Tempo de duração do anúncio">
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn text-uppercase">Pedir uma avaliação</button>
+                        <button type="submit" class="btn text-uppercase" aria-label="Enviar">Pedir uma avaliação</button>
                     </div>
                 </form>
             </div>
@@ -232,7 +232,7 @@
                 <form class="partner-form">
                     <div class="mb-3">
                         <label for="player" class="form-label text-uppercase d-flex justify-content-center">É só colocar nosso player em seu site!</label>
-                        <textarea class="form-control shadow-none border-0" id="player" rows="7"></textarea>
+                        <textarea class="form-control shadow-none border-0" id="player" rows="7" aria-label="Código do player"></textarea>
                     </div>
                 </form>
             </div>
@@ -240,14 +240,14 @@
                 <form class="partner-form">
                     <div class="mb-3">
                         <label for="site" class="form-label text-uppercase">Nos diga qual é o seu site, blog, página ou perfil?</label>
-                        <input type="text" class="form-control shadow-none border-0" id="site" aria-label="Seu site, blog, página, perfil">
+                        <input type="text" class="form-control shadow-none border-0" id="site" aria-label="Site, blog, página, perfil">
                     </div>
                     <div class="mb-3">
                         <label for="contato" class="form-label text-uppercase">Coloca um contato ai pra gente</label>
                         <input type="text" class="form-control shadow-none border-0" id="contato" aria-label="Contato">
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn text-uppercase">Pedir uma avaliação</button>
+                        <button type="submit" class="btn text-uppercase" aria-label="Enviar>Pedir uma avaliação</button>
                     </div>
                 </form>
             </div>

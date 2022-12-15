@@ -280,6 +280,9 @@
                 &:last-child{
                     margin: 0.5rem 0.5rem 0.45rem 0.5rem;
                 }
+                @include md{
+                    padding: 0rem 0rem 0rem -0.07rem;
+                }
             }
             .nav-themeLight{
                 background-color: $laranja;

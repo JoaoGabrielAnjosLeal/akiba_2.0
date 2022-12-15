@@ -141,7 +141,7 @@
     <div class="row mt-5 mb-4">
         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
             <section class="postList">
-                <article class="postList-article position-relative">
+            <article onclick="history.pushState('post','post','/akiba_2.0/animes'); router();" class="postList-article position-relative">
                     <img class="postList-thumb" src="https://img1.ak.crunchyroll.com/i/spire1/8f3cfc8beb6901457dbe7166a14ae2271661691153_main.png" loading="lazy" alt="Thumb da publicação">
                     <h6 class="postList-title text-uppercase">Doraemon: Filme Anime para 2023 adiciona Marina Inoue e Inori Minase ao elenco e é isso ai vamos lá ver o que é que tem pra ver</h6>
                     <div class="postList-count position-absolute"><i class="bi bi-hand-thumbs-up-fill"></i>&nbsp;100%</div>
@@ -154,7 +154,7 @@
                         <h6 class="postList-creditsDate text-uppercase"><i class="bi bi-calendar-date-fill"></i>&nbsp;00/00/0000</h6>
                     </div>
                 </article>
-                <article class="postList-article position-relative">
+                <article onclick="history.pushState('post','post','/akiba_2.0/animes'); router();" class="postList-article position-relative">
                     <img class="postList-thumb" src="https://img1.ak.crunchyroll.com/i/spire1/8f3cfc8beb6901457dbe7166a14ae2271661691153_main.png" loading="lazy" alt="Thumb da publicação">
                     <h6 class="postList-title text-uppercase">Doraemon: Filme Anime para 2023 adiciona Marina Inoue e Inori Minase ao elenco e é isso ai vamos lá ver o que é que tem pra ver</h6>
                     <div class="postList-count position-absolute"><i class="bi bi-hand-thumbs-up-fill"></i>&nbsp;100%</div>
@@ -167,7 +167,7 @@
                         <h6 class="postList-creditsDate text-uppercase"><i class="bi bi-calendar-date-fill"></i>&nbsp;00/00/0000</h6>
                     </div>
                 </article>
-                <article class="postList-article position-relative">
+                <article onclick="history.pushState('post','post','/akiba_2.0/animes'); router();" class="postList-article position-relative">
                     <img class="postList-thumb" src="https://img1.ak.crunchyroll.com/i/spire1/8f3cfc8beb6901457dbe7166a14ae2271661691153_main.png" loading="lazy" alt="Thumb da publicação">
                     <h6 class="postList-title text-uppercase">Doraemon: Filme Anime para 2023 adiciona Marina Inoue e Inori Minase ao elenco e é isso ai vamos lá ver o que é que tem pra ver</h6>
                     <div class="postList-count position-absolute"><i class="bi bi-hand-thumbs-up-fill"></i>&nbsp;100%</div>
@@ -180,7 +180,7 @@
                         <h6 class="postList-creditsDate text-uppercase"><i class="bi bi-calendar-date-fill"></i>&nbsp;00/00/0000</h6>
                     </div>
                 </article>
-                <article class="postList-article position-relative">
+                <article onclick="history.pushState('post','post','/akiba_2.0/animes'); router();" class="postList-article position-relative">
                     <img class="postList-thumb" src="https://img1.ak.crunchyroll.com/i/spire1/8f3cfc8beb6901457dbe7166a14ae2271661691153_main.png" loading="lazy" alt="Thumb da publicação">
                     <h6 class="postList-title text-uppercase">Doraemon: Filme Anime para 2023 adiciona Marina Inoue e Inori Minase ao elenco e é isso ai vamos lá ver o que é que tem pra ver</h6>
                     <div class="postList-count position-absolute"><i class="bi bi-hand-thumbs-up-fill"></i>&nbsp;100%</div>
@@ -193,7 +193,7 @@
                         <h6 class="postList-creditsDate text-uppercase"><i class="bi bi-calendar-date-fill"></i>&nbsp;00/00/0000</h6>
                     </div>
                 </article>
-                <article class="postList-article position-relative">
+                <article onclick="history.pushState('post','post','/akiba_2.0/animes'); router();" class="postList-article position-relative">
                     <img class="postList-thumb" src="https://img1.ak.crunchyroll.com/i/spire1/8f3cfc8beb6901457dbe7166a14ae2271661691153_main.png" loading="lazy" alt="Thumb da publicação">
                     <h6 class="postList-title text-uppercase">Doraemon: Filme Anime para 2023 adiciona Marina Inoue e Inori Minase ao elenco e é isso ai vamos lá ver o que é que tem pra ver</h6>
                     <div class="postList-count position-absolute"><i class="bi bi-hand-thumbs-up-fill"></i>&nbsp;100%</div>

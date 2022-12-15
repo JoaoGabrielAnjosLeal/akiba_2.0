@@ -8,13 +8,14 @@
     $('.player-footer').show();
     $('.footer').css({'margin': '0rem 0rem 4rem 0rem'}).show();
 
+    //Caixa de Comentários
     $('#disqus_thread').hide();
     $('.postShow-commentsBtn').click(function(){
         $('#disqus_thread').fadeToggle();
     });
     
-     //Tema da página
-     switch(Cookies.get('akiba-theme')){
+    //Tema da página
+    switch(Cookies.get('akiba-theme')){
         case 'light-theme':
             $('.body').css({'background': '#e6e6e6'});
 
@@ -33,7 +34,7 @@
             $('.postShow-text, .postShow-text > p, .recommend-article > h6').css({'color': ''});
             $('.postShow-title, .postShow-name, .postShow-font, .postShow-date, .tag-name, .tag-description').css({'color': ''});
         break;
-     }
+    }
 
     //Verifica se a url está preenchida para apontar para alguma postagem
     var url = window.location.href
@@ -113,7 +114,7 @@
                 <img class="postShow-reactionIcon" src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/svg/humor/BEM_RUIM.svg" loading="lazy" alt="Bem Ruim" title="Bem Ruim">
             </section>
             <section class="postShow-comments mt-4">
-                <div class="postShow-commentsContainer d-flex justify-content-center"><button class="postShow-commentsBtn w-75 text-uppercase text-center">DEIXE SEU COMENTÁRIO</button></div>
+                <div class="postShow-commentsContainer d-flex justify-content-center"><button class="postShow-commentsBtn w-75 text-uppercase text-center" aria-label="Deixe seu comentário">DEIXE SEU COMENTÁRIO</button></div>
                 <div id="disqus_thread" class="mt-4"></div>
                 <script async defer>
                     /**
@@ -137,7 +138,7 @@
                 <div class="postShow-author position-relative">
                     <h6 class="postShow-title text-uppercase position-absolute">Autor:</h6>
                     <h6 class="postShow-name text-uppercase">Neko Kirame e seu la o que é mais</h6>
-                    <img class="postShow-authorAvatar float-end" src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/img/ex_avatar.webp" alt="Avatar do colunista">
+                    <img class="postShow-authorAvatar float-end" src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/img/ex_avatar.webp" alt="Avatar do redator" loading="lazy">
                 </div>
                 <div class="postShow-fontDate mb-4">
                     <div class="postShow-fontContainer">

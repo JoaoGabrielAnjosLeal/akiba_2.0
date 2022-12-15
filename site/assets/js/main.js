@@ -3,8 +3,8 @@ if ("serviceWorker" in navigator) {
         console.log("[AKIBA PWA] ServiceWorker encontrado e ativo, não há necessidade de registrar e ativar um novo");
     } else {
         navigator.serviceWorker
-            .register("./akiba_2.0/sw.js", {
-                scope: "/"
+            .register("./sw.js", {
+                scope: "./"
             })
             .then(function(reg) {
                 console.log("[AKIBA PWA] ServiceWorder foi regristado e esta ativado! " + reg.scope);

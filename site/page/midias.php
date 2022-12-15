@@ -61,6 +61,8 @@
                     $('.body').css({'background': 'linear-gradient(180deg, #050505 25rem, #0e1139 0%)'});
                 };
             });
+
+            $('.survey-content > h6 , .survey-content > form > div > label, .survey-content > form > button, .events-localization, .events-date').css({'color':''})
         break;
     }
 </script>
@@ -94,7 +96,7 @@
                                 <input class="form-check-input" type="radio" name="opcao-04" id="opcao-04" aria-label="#">
                                 <label class="form-check-label" for="opcao-04">Peituda - anime do haren</label>
                             </div>
-                            <button type="submit" class="btn text-uppercase mt-2 border-0"><i class="bi bi-send-fill"></i>&nbsp;Votar nessa enquete</button>
+                            <button type="submit" class="btn text-uppercase mt-2 border-0" aria-label="Votar"><i class="bi bi-send-fill"></i>&nbsp;Votar nessa enquete</button>
                         </form>
                     </div>
                     <div class="survey-content p-2">
@@ -116,7 +118,7 @@
                                 <input class="form-check-input" type="radio" name="opcao-04" id="opcao-04" aria-label="#">
                                 <label class="form-check-label" for="opcao-04">Peituda - anime do haren</label>
                             </div>
-                            <button type="submit" class="btn text-uppercase mt-2 border-0"><i class="bi bi-send-fill"></i>&nbsp;Votar nessa enquete</button>
+                            <button type="submit" class="btn text-uppercase mt-2 border-0" aria-label="Votar"><i class="bi bi-send-fill"></i>&nbsp;Votar nessa enquete</button>
                         </form>
                     </div>
                     <div class="survey-content p-2">
@@ -138,7 +140,7 @@
                                 <input class="form-check-input" type="radio" name="opcao-04" id="opcao-04" aria-label="#">
                                 <label class="form-check-label" for="opcao-04">Peituda - anime do haren</label>
                             </div>
-                            <button type="submit" class="btn text-uppercase mt-2 border-0"><i class="bi bi-send-fill"></i>&nbsp;Votar nessa enquete</button>
+                            <button type="submit" class="btn text-uppercase mt-2 border-0" aria-label="Votar"><i class="bi bi-send-fill"></i>&nbsp;Votar nessa enquete</button>
                         </form>
                     </div>
                 </div>

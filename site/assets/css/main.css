@@ -293,6 +293,11 @@
 .header .nav .nav-themeSelector .nav-themeItem:last-child {
   margin: 0.5rem 0.5rem 0.45rem 0.5rem;
 }
+@media (max-width: 768px) {
+  .header .nav .nav-themeSelector .nav-themeItem {
+    padding: 0rem 0rem 0rem -0.07rem;
+  }
+}
 .header .nav .nav-themeSelector .nav-themeLight {
   background-color: #FF9D1F;
 }

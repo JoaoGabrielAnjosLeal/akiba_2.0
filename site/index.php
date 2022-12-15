@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/css/main.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="manifest" href="manifest.json">
     <!--PWA-->
     <link rel="manifest" href="manifest.json">
     <meta name="mobile-web-app-capable" content="yes">

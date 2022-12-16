@@ -63,7 +63,7 @@
 </div>
 
 <p class="credits position-absolute w-100 bottom-0 text-center">
-    Song Hwa Panel | Rede Akiba<br>
+    Song Hwa Panel | Rede Akiba - O Paraíso do Otakus.<br>
     Designer e planejamento por Ellyson Santos | Desenvolvido por João Gabriel.
 </p>
 

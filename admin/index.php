@@ -1,6 +1,6 @@
 <?php
-    if(isset($_GET['status'])){
-        $alert = $_GET['status'];
+    if(isset($_GET['a'])){
+        $alert = $_GET['a'];
     }else{
         $alert = "none";
     }

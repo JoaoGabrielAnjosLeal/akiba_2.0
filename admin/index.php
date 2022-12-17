@@ -1,10 +1,3 @@
-<?php
-    if(isset($_GET['a'])){
-        $alert = $_GET['a'];
-    }else{
-        $alert = "none";
-    }
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -19,7 +12,7 @@
     <meta name="copyright" content="© <?php echo date("Y"); ?> Rede Akiba - O Paraíso dos Otakus" />
     <meta name="robots" content="noindex" />
     <meta name="googlebot" content="noindex" />
-    <title>Rede Akiba | Song Hwa Panel</title>
+    <title>Rede Akiba | SongHwa Panel 2.0</title>
     <link rel="shortcut icon" href="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/admin/assets/img/img/favicon.ico" type="image/x-icon">
     <!--preloads-->
     <link rel="preload" href="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/admin/assets/css/main.css" as="style">
@@ -33,39 +26,44 @@
 <body class="body">
 
 <div class="container">
-
     <div class="row d-flex justify-content-center">
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xll-4">
-            <section class="login">
-                <img class="login-logo" src="<?php $_SERVER['HTTP_HOST']; ?>/akiba_2.0/admin/assets/img/img/logo.webp">
-                <div class="login-form p-4">
-                    <form>
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xll-10">
+            <section class="login d-flex flex-wrap">
+                <div class="login-area">
+                    <img src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/admin/assets/img/img/logo.webp">
+                    <form class="mt-3">
                         <div class="mb-3">
                             <label for="login" class="form-label text-uppercase"><i class="bi bi-person-circle"></i>&nbsp;Login</label>
-                            <input type="email" class="form-control shadow-none border-dark" id="login" aria-label="Login" placeholder="Fuslie" required>
+                            <input type="text" class="form-control shadow-none" id="login" aria-label="Login" placeholder="Fuslie" required>
                         </div>
                         <div class="mb-3">
                             <label for="senha" class="form-label text-uppercase"><i class="bi bi-key-fill"></i>&nbsp;Senha</label>
-                            <input type="password" class="form-control shadow-none border-dark" id="senha" aria-label="Senha" placeholder="••••••••••" required>
+                            <input type="password" class="form-control shadow-none" id="senha" aria-label="Senha" placeholder="••••••••••" required>
                         </div>
-                        <button type="submit" class="btn border-0 text-uppercase" aria-label="Entrar"><i class="bi bi-box-arrow-in-right"></i>&nbsp;&nbsp;Entrar</button>
+                        <button type="submit" class="btn text-uppercase border-0 w-100"><i class="bi bi-box-arrow-in-right"></i>&nbsp;&nbsp;Entrar</button>
                     </form>
-                    <?php if($alert == "erro"){ ?>
-                        <div class="alert alert-dark text-center text-uppercase mt-3 m-0" role="alert">
-                            <i class="bi bi-hand-thumbs-down-fill"></i>&nbsp;Seus dados de login estão errados
-                        </div>
-                    <?php } ?>
+                    <button class="btn text-uppercase border-0 w-100 mt-2"><i class="bi bi-x"></i>&nbsp;Esqueci meus dados de acesso</button>
                 </div>
+                <div class="login-rest">
+                    <!--PODE SER COLOCADO QUALQUER COISA AQUI, É ONDE TA A IMAGEM DA MENINA EM UMA ESTAÇÃO DE RÁDIO-->
+                </div>                
             </section>
         </div>
     </div>
-
 </div>
 
-<p class="credits position-absolute w-100 bottom-0 text-center">
-    Song Hwa Panel | Rede Akiba - O Paraíso do Otakus.<br>
-    Designer e planejamento por Ellyson Santos | Desenvolvido por João Gabriel.
+<p class="credits w-100 position-absolute bottom-0 text-center">
+    Song Hwa Panel 2.0 | Rede Akiba - O Paraíso dos Otakus<br>
+    Planejamento e designer por Ellyson Santos. Desenvolvimento por João Gabriel.
 </p>
+
+<div class="toast position-absolute text-bg-primary" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body">
+      <!--O TEXO SERÁ INJETADO VIA JS-->
+    </div>
+  </div>
+</div>
 
 <!--javascript-->
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
@@ -74,33 +72,16 @@
 </body>
 </html>
 
-<script async defer>
-    $('.body').css({
-        "background-image": "url('https://wallpaperaccess.com/full/1567784.jpg')",
-        "background-size": "cover"
+<script aync defer>
+    $('.toast').css({
+        'bottom': '1rem',
+        'right': '1rem',
+        'border-radius': '0.5rem'
     });
-    if(window.screen.width < '992'){
-        $('.body').css({
-            "background-image": "none",
-            "background-color": "#0e1139"
-        });
-    }else{
-        $('.body').css({
-            "background-image": "url('https://wallpaperaccess.com/full/1567784.jpg')",
-            "background-size": "cover"
-        });
-    };
-    $(window).on('resize', function(){
-        if(window.screen.width < '992'){
-            $('.body').css({
-                "background-image": "none",
-                "background-color": "#0e1139"
-            });
-        }else{
-            $('.body').css({
-                "background-image": "url('https://wallpaperaccess.com/full/1567784.jpg')",
-                "background-size": "cover"
-            });
-        };
+
+    $('.login-area > button').click(function(){
+        $('.toast').fadeIn();
+        $('.toast-body').text('Procure a administração da Rede Akiba para recuperar seu login e senha de acesso!');
+        setTimeout(function(){ $('.toast').fadeOut(); }, 5*1000);
     });
 </script>

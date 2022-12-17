@@ -18,6 +18,10 @@
     font-family: Averta-Regular;
 }
 
+.body{
+    background-color: $azul-medio-02;
+}
+
 //********** CREDITS **********
 .credits{
     color: $aurora;
@@ -26,46 +30,69 @@
 
 //********** LOGIN **********
 .login{
-    margin: 30% auto;
-    .login-logo{
-        width: 100%;
-        padding: 0rem 5rem 2rem 5rem;
-        @include lg{
-            padding: 0rem 3rem 2rem 3rem;
+    width: 100%;
+    height: 25rem;
+    margin: 14% auto;
+    background-color: $aurora;
+    border-radius: 1rem 2rem 2rem 1rem;
+    .login-area{
+        width: 50%;
+        height: auto;
+        padding: 2.5rem 3rem 0rem 3rem;
+        img{
+            width: 8rem;
         }
-        @include md{
-            padding: 0rem 2rem 2rem 2rem;
-        }
-    }
-    .login-form{
-        background-color: $aurora;
-        border-radius: 0.8rem;
         form{
             div{
                 label{
                     font-family: Averta-ExtraBold;
-                    font-size: 1rem;
+                    color: $azul-escuro-01;
                 }
                 input{
-                    border-radius: 0.5rem;
                     margin: -0.3rem 0rem 0rem 0rem;
+                    border: 0.1rem solid $azul-escuro-01;
+                    border-radius: 0.5rem;
                 }
             }
             button{
-                background-color: $azul-claro-01;
-                border-radius: 0.5rem;
+                background-color: $azul-escuro-01;
                 font-family: Averta-ExtraBold;
                 color: $aurora;
                 &:hover{
-                    background-color: $azul-claro-01 !important;
-                    color: $aurora !important;
+                    background-color: $azul-escuro-01;
+                    font-family: Averta-ExtraBold;
+                    color: $aurora;
                 }
             }
         }
-        .alert{
-            border-radius: 0.5rem;
+        button{
+            background-color: $vermelho;
             font-family: Averta-ExtraBold;
-            font-size: 0.9rem;
+            color: $aurora;
+            &:hover{
+                background-color: $vermelho;
+                font-family: Averta-ExtraBold;
+                color: $aurora;
+            }
         }
+        @include lg{
+            width: 100%;
+        }
+    }
+    .login-rest{
+        width: 50%;
+        background-image: url('https://i.imgur.com/t0djoo9.png');
+        background-size: 100% 100%;
+        border-radius: 0rem 1rem 1rem 0rem;
+        @include lg{
+            display: none;
+        }
+    }
+    @include lg{
+        margin: 30% auto;
+        border-radius: 2rem;
+    }
+    @include xll{
+        margin: 30% auto;
     }
 }

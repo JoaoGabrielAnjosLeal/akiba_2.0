@@ -172,7 +172,7 @@
                 <section class="footer-container mt-3">
                     <img class="footer-logo d-flex mx-auto" src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/img/logo.webp" alt="Logo do site">
                     <p class="footer-credits mt-3 w-100 text-center">
-                        Copyright © 2016 - <?php echo date('Y'); ?> Rede Akiba | Versão SongHwa 2.0<br>
+                        Copyright © 2016 - <?php echo date('Y'); ?> Rede Akiba | Versão SongHwa<br>
                         Planejamento por <span>Ellyson Santos</span> e <span>Antônio Medeiros Lopes</span>. Desenvolvimento por <span>João Gabriel</span>.
                     </p>
                 </section>

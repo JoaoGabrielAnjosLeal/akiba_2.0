@@ -1,5 +1,5 @@
 <!---------------------------------JAVASCRIPT PRÓPRIO DA PÁGINA--------------------------------->
-<script async defer>
+<script defer>
 //Altera o título da página no navegador 
 $('title').text('Rede Akiba - O Paraíso dos Otakus! | Sua Melhor Fonte de Animes (e Mangás) no Brasil!');
     

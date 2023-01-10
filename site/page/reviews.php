@@ -1,5 +1,5 @@
 <!---------------------------------JAVASCRIPT PRÓPRIO DA PÁGINA--------------------------------->
-<script async defer>
+<script defer>
     //Altera o titulo da página no navegador
     $('title').text('Rede Akiba | Reviews');
 

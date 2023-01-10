@@ -1,5 +1,5 @@
 <!---------------------------------JAVASCRIPT PRÓPRIO DA PÁGINA--------------------------------->
-<script>
+<script defer>
     //Altera o titulo da página no navegador
     $('title').text('Rede Akiba | Mídias');
 

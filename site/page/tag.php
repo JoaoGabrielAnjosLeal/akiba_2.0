@@ -1,5 +1,5 @@
 <!---------------------------------JAVASCRIPT PRÓPRIO DA PÁGINA--------------------------------->
-<script async defer>
+<script defer>
     //Altera o título da página no navegador
     var url = window.location.href;
     var urlSplit = url.split('/');

@@ -1,5 +1,5 @@
 <!---------------------------------JAVASCRIPT PRÓPRIO DA PÁGINA--------------------------------->
-<script async defer>
+<script defer>
     //Altera o titulo da página no navegador
     $('title').text('Rede Akiba | Nome do post');
 
@@ -116,7 +116,7 @@
             <section class="postShow-comments mt-4">
                 <div class="postShow-commentsContainer d-flex justify-content-center"><button class="postShow-commentsBtn w-75 text-uppercase text-center" aria-label="Deixe seu comentário">DEIXE SEU COMENTÁRIO</button></div>
                 <div id="disqus_thread" class="mt-4"></div>
-                <script async defer>
+                <script defer>
                     /**
                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/

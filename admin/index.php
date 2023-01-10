@@ -12,7 +12,7 @@
     <meta name="copyright" content="© <?php echo date("Y"); ?> Rede Akiba - O Paraíso dos Otakus" />
     <meta name="robots" content="noindex" />
     <meta name="googlebot" content="noindex" />
-    <title>Rede Akiba | SongHwa Panel 2.0</title>
+    <title>Rede Akiba | Song Ga-Kyeong Panel</title>
     <link rel="shortcut icon" href="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/admin/assets/img/img/favicon.ico" type="image/x-icon">
     <!--preloads-->
     <link rel="preload" href="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/admin/assets/css/main.css" as="style">

@@ -297,7 +297,6 @@ function router(){
     const urlPage = urlSplit[4]; //Marcador da página
     const urlParameter01 = urlSplit[5]; // Parametro 01
     const urlParameter02 = urlSplit[6]; // Parametro 02
-    const urlParameter03 = urlSplit[7]; // Parametro 03
     console.log(urlSplit);
 
     switch(urlPage){
@@ -305,7 +304,7 @@ function router(){
             $('main').load(`http://localhost/akiba_2.0/site/page/home.php`);
         break;
         case 'tag':
-            $('main').load(`http://localhost/akiba_2.0/site/page/tag.php/${urlParameter01}/${urlParameter02}/${urlParameter03}`);
+            $('main').load(`http://localhost/akiba_2.0/site/page/tag.php/${urlParameter01}`);
         break;
         case 'reviews':
             $('main').load(`http://localhost/akiba_2.0/site/page/reviews.php`);
@@ -317,7 +316,7 @@ function router(){
             $('main').load(`http://localhost/akiba_2.0/site/page/podcasts.php`);
         break;
         case 'equipe':
-            $('main').load(`http://localhost/akiba_2.0/site/page/equipe.php/${urlParameter01}/${urlParameter02}/${urlParameter03}`);
+            $('main').load(`http://localhost/akiba_2.0/site/page/equipe.php/${urlParameter01}/${urlParameter02}`);
         break;
         case 'midias':
             $('main').load(`http://localhost/akiba_2.0/site/page/midias.php`);
@@ -326,13 +325,13 @@ function router(){
             $('main').load(`http://localhost/akiba_2.0/site/page/contatos.php`);
         break;
         case 'animes': case 'mangas': case 'tops': case 'listas': case 'listas': case 'primeiras-impressoes': case 'curiosidades': case 'eventos': case 'noticias':
-            $('main').load(`http://localhost/akiba_2.0/site/page/post.php/${urlParameter01}/${urlParameter02}/${urlParameter03}`);
+            $('main').load(`http://localhost/akiba_2.0/site/page/post.php/${urlParameter01}/${urlParameter02}`);
         break
         case 'review':
-            $('main').load(`http://localhost/akiba_2.0/site/page/review.php/${urlParameter01}/${urlParameter02}/${urlParameter03}`);
+            $('main').load(`http://localhost/akiba_2.0/site/page/review.php/${urlParameter01}`);
         break;
         case 'podcast':
-            $('main').load(`http://localhost/akiba_2.0/site/page/podcast.php/${urlParameter01}/${urlParameter02}/${urlParameter03}`);
+            $('main').load(`http://localhost/akiba_2.0/site/page/podcast.php/${urlParameter01}`);
         break;
         default: 
             $('main').load(`http://localhost/akiba_2.0/site/page/404.php`);

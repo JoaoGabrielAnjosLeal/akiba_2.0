@@ -1,1 +1,19 @@
-{  "name": "Rede Akiba",  "short_name": "Akiba",  "description": "Portal de notícias e web-rádio voltado para otakus",  "lang": "pt-BR",  "start_url": "./",  "id": "./?=",  "scope": "./?",  "display": "standalone",  "theme_color": "#000000",  "icons": [    {      "src": "https://i.imgur.com/tQWUHWP.png",      "sizes": "200x200",      "type": "image/png"    }  ],  "background_color": "#2e3bef"}
+{  
+    "name": "Rede Akiba",  
+    "short_name": "Akiba",  
+    "description": "Portal de notícias e web-rádio voltado para otakus",  
+    "lang": "pt-BR",  
+    "start_url": "./",  
+    "id": "./?=",  
+    "scope": "./?",  
+    "display": "standalone",  
+    "theme_color": "#000000",  
+    "icons": [    
+        {      
+            "src": "https://i.imgur.com/tQWUHWP.png",      
+            "sizes": "200x200",
+            "type": "image/png"    
+        }  
+    ],  
+    "background_color": "#2e3bef"
+}

@@ -6,7 +6,7 @@
     //Comportamento dos players na página
     $('.player-top').hide();
     $('.player-footer').show();
-    $('.footer').css({'margin': '0rem 0rem 4rem 0rem'}).show();
+    $('.footer').css({'margin': '0rem 0rem 4rem 0rem'});
 
     //Caixa de Comentários
     $('#disqus_thread').show();

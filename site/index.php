@@ -165,15 +165,16 @@
     <!--Aqui irá carregar todo o conteúdo do site-->
 </main>
 
-<footer class="footer w-100">
+<footer class="footer w-100 position-relative">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xll-12 pt-2 pb-1">
                 <section class="footer-container mt-3">
                     <img class="footer-logo d-flex mx-auto" src="<?php $_SERVER['HTTP_HOST'];?>/akiba_2.0/site/assets/img/img/logo.webp" alt="Logo do site">
                     <p class="footer-credits mt-3 w-100 text-center">
-                        Copyright © 2016 - <?php echo date('Y'); ?> Rede Akiba | Versão SongHwa<br>
-                        Planejamento por <span>Ellyson Santos</span> e <span>Antônio Medeiros Lopes</span>. Desenvolvimento por <span>João Gabriel</span>.
+                        Copyright © 2016 - <?php echo date('Y'); ?> Rede Akiba | Versão Song Ga-Kyeong - 2.0<br>
+                        Planejamento por <span>Ellyson Santos</span> e <span>Antônio Medeiros Lopes</span>. Desenvolvimento por <span>João Gabriel</span>.<br>
+                        Todas as imagens de animes, mangás, personagens e etc são marcas registradas dos seus respectivos autores.
                     </p>
                 </section>
             </div>

@@ -9,7 +9,7 @@ $('.player-footer').hide();
 $('.footer').css({'margin': ''}).show();
 if(window.screen.width < '992'){
     $('.player-footer').show();
-    $('.footer').css({'margin': '0rem 0rem 4rem 0rem'}).show();
+    $('.footer').css({'margin': '0rem 0rem 4rem 0rem'});
 }
 
 //Tema da página
